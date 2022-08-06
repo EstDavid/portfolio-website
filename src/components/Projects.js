@@ -1,40 +1,78 @@
 import React from 'react';
-import dolphinanceProject from '../assets/projectDlpTokenExchange_cropped.png';
-import uniChartsProject from '../assets/projectUniCharts_cropped.png';
+import { projects, getSkill, getIconSymbol } from '../assets/copyData';
 
 const dolphinanceDescription = 'Exchange Dapp with its own ERC-20 token, deployed on the Rinkeby network';
 const uniChartsDescription = 'Charting app that reads price data from Uniswap V3 pools';
 
 
 const ProjectFigure = (props) => {
+    const {project } = props;
+
     return (
         <div className="col-sm-6 col-xs-12">
             <figure>
                 <div className="img-wrapper">
-                    <img src={props.projectImage} className="img-responsive" alt={props.title} ></img>
+                    <img src={project.image} className="img-responsive" alt={project.title} ></img>
                     <div className="overlay">
-                        <div className="btn-group-vertical" role="group">
-                            <a type="button" className="btn btn-primary" target="_blank" rel="noreferrer noopener" href={props.demoLink}>Live Demo</a>
-                            {props.githubLinkBackend === undefined ? 
-                                <a type="button" className="btn btn-outline-primary" target="_blank" rel="noreferrer noopener" href={props.githubLink}>Code</a>
-                            :
-                                <div>
-                                    <a type="button" className="btn btn-outline-primary" target="_blank" rel="noreferrer noopener" href={props.githubLink}>Frontend Code</a>
-                                    <a type="button" className="btn btn-outline-primary" target="_blank" rel="noreferrer noopener" href={props.githubLinkBackend}>Backend Code</a>
+                            <div className="project-buttons" role="group">
+                                <a 
+                                    type="button"
+                                    className="d-flex btn btn-primary justify-content-center"
+                                    target="_blank" rel="noreferrer noopener"
+                                    href={project.demoCodeURLs[0]}>Live Demo
+                                </a>
+                                {project.demoCodeURLs.length === 2 ? 
+                                    <a 
+                                    type="button" 
+                                    className="d-flex btn btn-outline-primary justify-content-center" 
+                                    target="_blank" rel="noreferrer noopener" 
+                                    href={project.demoCodeURLs[1]}
+                                >Code</a>
+                                :
+                                <div className="d-flex">
+                                    <a 
+                                    type="button" 
+                                    className="btn btn-outline-primary" 
+                                    target="_blank" rel="noreferrer noopener" 
+                                    href={project.demoCodeURLs[1]}
+                                >Frontend Code</a>
+                                    <a 
+                                    type="button" 
+                                    className="btn btn-outline-primary" 
+                                    target="_blank" rel="noreferrer noopener" 
+                                    href={project.demoCodeURLs[2]}
+                                >Backend Code</a>
                                 </div>
-                            }
+                                }
+                            </div>
+                        <div className="project-skillset">
+                            <h5 className="mt-2" style={{color: "white"}}>Skills and technologies used:</h5>
+                            <div className="d-flex flex-wrap w-100">
+                                {project.skillSets.map((skillName, index) => {
+                                    const skill = getSkill(skillName);
+                                    if(skill !== undefined) return (
+                                        <button key={index} type="button" className="btn btn-outline-light m-1" disabled>
+                                            {skill.iconText ? getIconSymbol(skill.iconText) : ''}
+                                            {skill.name}
+                                        </button>
+                                    )
+                                })}
+                            </div>
                         </div>
+
                     </div>
                 </div>
                 <figcaption>
                 <h4>
-                <a href={props.demoLink}>
-                    {props.title}
+                <a href={project.demoCodeURLs[0]}>
+                    {project.title}
                 </a>
                 </h4>
-                <p>
-                    {props.description}
-                </p>
+                {project.description.map((paragraph, index) => {
+                    return (
+                        <p className="fs-6" key={index} >{paragraph}</p>
+                    )
+                })}
                 </figcaption>
             </figure>
         </div>
@@ -58,21 +96,14 @@ const Projects = () => {
                 </div>
 
                 <div className="row">
-                    <ProjectFigure 
-                        projectImage={dolphinanceProject}
-                        title='Dolphinance'
-                        description={dolphinanceDescription}
-                        demoLink='http://dlp-token-exchange.herokuapp.com/'
-                        githubLink='https://github.com/Vandenynas/DappExchange'
-                    />
-                    <ProjectFigure
-                        projectImage={uniChartsProject}
-                        title='UniCharts'
-                        description={uniChartsDescription}
-                        demoLink='http://uniswapv3-charts.herokuapp.com/'
-                        githubLink='https://github.com/Vandenynas/uniswapv3-charts'
-                        githubLinkBackend='https://github.com/Vandenynas/UniswapV3OracleReader'
-                    />
+                    {projects.map((project, index) => {
+                        return (
+                            <ProjectFigure key={index}
+                                project={project}
+                            />
+                        )
+
+                    })}
                 </div>
             </div>
         </section>
