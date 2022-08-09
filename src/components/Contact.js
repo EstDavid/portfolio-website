@@ -1,15 +1,29 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { mainLinks } from '../assets/copyData';
 
 const ContactItem = (props) => {
+
+    const [ data, setData] = useState(['', '']);
+
+    const [ showInfo, setVisibility ] = useState(false);
+
+    const handleClick = () => {
+        setData([props.linkURL, props.contactData]);
+        setVisibility(true);
+    }
+
     return (
-        <div className="col-md-4 mt-4 pt-2">
+        <div className="col-md-6 mt-4 pt-2">
             <div className="contact-detail text-center">
                 <i className={`bi bi-${props.iconText}-fill`} style={{fontSize: "3rem"}}></i>
                 <div className="content mt-4">
                     <h5 className="title text-uppercase">{props.title}</h5>
                     <p className="text-muted">{props.extraText}</p>
-                    <a href={props.linkURL} className="text-primary">{props.contactData}</a>
+                    {showInfo ?
+                        <a href={data[0]} className="text-primary">{data[1]}</a>
+                        : 
+                        <button className="btn btn-secondary" onClick={() => handleClick()}>Reveal {props.title}</button>
+                    }
                 </div>
             </div>
         </div>
@@ -44,12 +58,12 @@ const Contact = () => {
                     extraText="Send me an email to:"
                     contactData="estdav@protonmail.com"
                     linkURL={mainLinks.email} />
-                <ContactItem 
+{/*                 <ContactItem 
                     title="Location"
                     iconText="geo-alt"
                     extraText="Alicante (Spain)"
                     contactData="Central European Time (UTC+01:00)"
-                    linkURL="https://24timezones.com/time-zone/cet" />
+                    linkURL="https://24timezones.com/time-zone/cet" /> */}
 
                 </div>
 
