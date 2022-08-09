@@ -3,7 +3,14 @@ import { home, mainLinks } from '../assets/copyData';
 
 const Home = () => {
     return (
-        <section className="bg-home bg-light d-table w-100 active" style={{"backgroundImage":"url('images/home/01.png')"}} id="home">
+        <section className="bg-home bg-light d-table w-100 active" 
+            style={{
+                backgroundImage:`url(${home.backgroundImage})`,
+                backgroundSize:'cover',
+                backgroundPositionX:'left',
+                backgroundPositionY:'top'
+            }} 
+            id="home">
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-12">
