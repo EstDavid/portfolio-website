@@ -1,9 +1,10 @@
 import React from 'react';
 
 // Importing images
-import dolphinanceProject from './projectDlpTokenExchange_2_cropped.png';
-import uniChartsProject from './projectUniCharts_3_cropped.png';
+import dolphinanceProject from './projectDolphinance.png';
+import uniChartsProject from './projectUniCharts.png';
 import cvDocument from './CV-David_de_Esteban.pdf';
+import backgroundImage from './background.png';
 
 export const completeSkillSet = [
     {
@@ -128,14 +129,15 @@ export const skillCategories = [
 export const mainLinks = {
     email: 'mailto:estdav@protonmail.com',
     github: 'https://github.com/EstDavid/',
-    linkedIn: 'www.linkedin.com/in/david-de-esteban',
+    linkedIn: 'https://www.linkedin.com/in/david-de-esteban',
     cv: cvDocument
 }
 
 export const home = {
     titleQuestion: 'Looking for a Blockchain Developer?',
-    title: "Hey, I'm David de Esteban",
-    titleCaption: "I'm a blockchain developer with experience in trading"
+    title: "Hey, I'm David",
+    titleCaption: "I'm a blockchain developer with experience in trading",
+    backgroundImage
 };
 
 export const projects = [
@@ -195,11 +197,18 @@ export const projects = [
 ];
 
 export const about = {
-    title1: 'Hello, I am David',
-    title2: 'Blockchain Developer from Spain',
+    title1: 'Hey there!',
+    title2: "I'm a Blockchain Developer with experience in trading",
     descriptions: [
-        'I have been in the crypto space since early 2018 as an investor and a trader',
-        'In 2021 I took my interest for crypto to a new level and became a blockchain developer'
+        <span>
+            I have been in the crypto space since early 2018 as an investor and a trader. 
+            In 2021 I took my interest for crypto to a new level and became a blockchain developer.
+        </span>,
+        // <span>
+        //     My original background is in Mechanical Engineering, 
+        //     where I worked for many years in the design of systems from trains and locomotives.
+        // </span>,
+
     ]
 
 }
