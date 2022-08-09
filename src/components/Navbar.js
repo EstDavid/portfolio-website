@@ -1,4 +1,5 @@
 import React from 'react';
+import { mainLinks } from '../assets/copyData';
 
 const Navbar = () => {
 
@@ -9,7 +10,7 @@ const Navbar = () => {
     		<div className="container">
                 <a className="navbar-brand d-flex align-items-center" href="#">
                 <h1><span className="badge bg-primary me-2">D</span></h1>
-                    David de Esteban</a>
+                    David<strong className="ms-2">Blockchain Developer</strong></a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -25,10 +26,13 @@ const Navbar = () => {
                         })}
                     </ul>
 
-                    <ul className="list-unstyled mb-0 mt-2 mt-sm-0 social-icon">
-                        <li className="list-inline-item"><a href=""><i className="mdi mdi-facebook"></i></a></li>
-                        <li className="list-inline-item"><a href=""><i className="mdi mdi-twitter"></i></a></li>
-                        <li className="list-inline-item"><a href=""><i className="mdi mdi-instagram"></i></a></li>
+                    <ul className="list-group list-group-horizontal mb-0 mt-1 mt-sm-0">
+                        <li className="list-group-item social-icon">
+                            <a href={mainLinks.github} target="_blank" rel="noreferrer noopener"><i className="bi bi-github" style={{fontSize: "2rem"}}></i></a>
+                        </li>
+                        <li className="list-group-item social-icon">
+                            <a href={mainLinks.linkedIn} target="_blank" rel="noreferrer noopener"><i className="bi bi-linkedin" style={{fontSize: "2rem"}}></i></a>
+                        </li>
                     </ul>
                 </div> 
             </div>
