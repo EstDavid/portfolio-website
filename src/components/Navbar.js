@@ -19,7 +19,7 @@ const Navbar = () => {
                     <ul id="navbar-navlist" className="navbar-nav navbar-nav-link mx-auto">
                         {navLinks.map((navLink, index) => {
                             return (
-                                <li key={index} className="nav-item">
+                                <li key={index} className={index === 0 ? "nav-item active" : "nav-item"}>
                                     <a className="nav-link" href={'#' + navLink}>{navLink[0].toUpperCase() + navLink.slice(1)}</a>
                                 </li>
                             )
