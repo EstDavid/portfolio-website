@@ -5,7 +5,7 @@ const ProjectFigure = (props) => {
     const {project } = props;
 
     return (
-        <div className="col-sm-6 col-xs-12">
+        <div className="col-sm-4 col-xs-12">
             <figure>
                 <div className="img-wrapper">
                     <img src={project.image} className="img-responsive" alt={project.title} ></img>
