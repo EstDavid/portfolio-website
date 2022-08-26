@@ -1,6 +1,7 @@
 import React from 'react';
 
 // Importing images
+import deltaRadarProject from './projectDeltaRadar.png';
 import dolphinanceProject from './projectDolphinance.png';
 import uniChartsProject from './projectUniCharts.png';
 import cvDocument from './CV-David_de_Esteban.pdf';
@@ -17,6 +18,11 @@ export const completeSkillSet = [
         name: 'Ethers',
         isBlockchain: true,
         isFramework: true,
+    },
+    {
+        name: 'Deployment to Mainnet',
+        isBlockchain: true,
+        isLanguage: false,
     },
     {
         name: 'Truffle',
@@ -142,10 +148,46 @@ export const home = {
 
 export const projects = [
     {
+        title: 'Delta Radar',
+        image: deltaRadarProject,
+        description: [
+            <h5>Web featuring the best potential trades of a Defi trading bot</h5>,
+            <span>Delta Radar is a frontend app which shows potential profitable arbitrage trades accross different token pools in Decentralized Exchanges (DEX)</span>,
+            <span>This frontend is a <strong>small part of a broader project</strong> which is aimed at creating a <strong>trading bot</strong> capable of:</span>,
+            <ul className="list-group list-group-flush">
+                <li className="list-group-item">Scanning token pools accross different DEXs</li>
+                <li className="list-group-item">Finding price differences which yield a profit</li>
+                <li className="list-group-item">Calculating the optimum amount of the first token in the trade sequence</li>
+                <li className="list-group-item">Triggering a smart contract with flash loan capabilities which attempts to catch the potential profit</li>
+            </ul>,
+            <span>        
+            The app displays the historic output from the trading bot scanner module and allows to search and filter past potential trades, according to criteria such as profitability, date, token or exchange 
+            </span>
+        ],
+        skillSets: [
+            'Solidity',
+            'Deployment to Mainnet',
+            'ethers',
+            'Trading Bots',
+            'Flash Swaps',
+            'Truffle',
+            'Ganache',
+            'Javascript',
+            'Node.js',
+            'React',
+            'Redux',
+            'Bootstrap'
+        ],
+        demoCodeURLs: [
+            'http://delta-radar.herokuapp.com/',
+            'https://github.com/EstDavid/delta-radar'
+        ]
+    },
+    {
         title: 'Dolphinance',
         image: dolphinanceProject,
         description: [
-            <span>Exchange Dapp with its own ERC-20 token</span>,
+            <h5>Exchange Dapp with its own ERC-20 token</h5>,
             <span>Both corresponding smart contracts are deployed on the Rinkeby network <a 
                 href="https://rinkeby.etherscan.io/address/0x6723e472b9de9b329f344aa6c8dc80e67db92de8" target="_blank" rel="noreferrer noopener" >here (Dapp)
                 </a> and <a 
@@ -174,7 +216,7 @@ export const projects = [
         title: 'UniCharts',
         image: uniChartsProject,
         description: [
-            'Charting app that reads price data from Uniswap V3 pools',
+            <h5>Charting app that reads price data from Uniswap V3 pools</h5>,
             'The app is composed of a frontend and a backend. The backend retrieves data from Uniswap V3 pools and stores it on a database',
             'The frontend reads the historical price data from the database and generates the charts',
             'It features easy search of coin pairs, visualization of charts in different timeframes and use of exponential and simple moving averages (EMA and SMA)'
