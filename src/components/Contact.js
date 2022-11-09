@@ -49,9 +49,9 @@ const Contact = () => {
                 <ContactItem
                     title="Phone"
                     iconText="telephone"
-                    extraText="Call me at:"
-                    contactData="+ 34 656 552 448"
-                    linkURL='tel:+34656552448' />
+                    extraText="Call me:"
+                    contactData="Whatsapp audio"
+                    linkURL='https://call.whatsapp.com/voice/O8bdajmqR84OuKPie1GXZB' />
                 <ContactItem
                     title="Email"
                     iconText="envelope"
