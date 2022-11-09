@@ -22,7 +22,7 @@ const ContactItem = (props) => {
                     {showInfo ?
                         <a href={data[0]} className="text-primary">{data[1]}</a>
                         : 
-                        <button className="btn btn-secondary" onClick={() => handleClick()}>Reveal {props.title}</button>
+                        <button className="btn btn-secondary" onClick={() => handleClick()}>Show {props.title}</button>
                     }
                 </div>
             </div>
