@@ -33,6 +33,9 @@ const Navbar = () => {
                         <li className="list-group-item social-icon">
                             <a href={mainLinks.linkedIn} target="_blank" rel="noreferrer noopener"><i className="bi bi-linkedin" style={{fontSize: "2rem"}}></i></a>
                         </li>
+                        <li className="list-group-item social-icon">
+                            <a href={mainLinks.cv} target="_blank" rel="noreferrer noopener"><i className="bi bi-file-earmark-text" style={{fontSize: "2rem"}}></i></a>
+                        </li>
                     </ul>
                 </div> 
             </div>
