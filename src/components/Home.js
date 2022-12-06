@@ -20,7 +20,11 @@ const Home = () => {
                             <p className="para-desc text-muted">{home.titleCaption}</p>
                             <div className="mt-4 pt-2">
                                 <a href={mainLinks.email} className="btn btn-primary rounded mb-2 me-2">Hire me</a>
-                                <a href={mainLinks.cv} className="btn btn-outline-primary rounded mb-2" download>Download CV <i className="bi bi-download"></i></a>
+                                <a href={mainLinks.cv}
+                                    className="btn btn-outline-primary rounded mb-2" 
+                                    download="CV Developer - David de Esteban.pdf"
+                                    >Download CV <i className="bi bi-download"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
