@@ -4,7 +4,7 @@ import React from 'react';
 import deltaRadarProject from './projectDeltaRadar.png';
 import dolphinanceProject from './projectDolphinance.png';
 import uniChartsProject from './projectUniCharts.png';
-import cvDocument from './CV-David_de_Esteban.pdf';
+import cvDocument from './CV Developer - David de Esteban.pdf';
 import backgroundImage from './background.png';
 
 export const completeSkillSet = [
@@ -136,6 +136,7 @@ export const mainLinks = {
     email: 'mailto:estdav@protonmail.com',
     github: 'https://github.com/EstDavid/',
     linkedIn: 'https://www.linkedin.com/in/david-de-esteban',
+    curriculum: 'https://drive.google.com/file/d/17oiJXEJ6Ouoct981yW8mKoYsnFsRbpel/view?usp=share_link',
     cv: cvDocument
 }
 
