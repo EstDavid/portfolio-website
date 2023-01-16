@@ -8,9 +8,11 @@ const Navbar = () => {
     return (
         <nav id="navbar" className="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
     		<div className="container">
-                <a className="navbar-brand d-flex align-items-center" href="#">
-                <h1><span className="badge bg-primary me-2">D</span></h1>
-                    David<strong className="ms-2">Blockchain Developer</strong></a>
+                <a className="navbar-brand d-flex align-items-center" href="#top">
+                    <span className="badge bg-primary me-2 fs-1">D</span>
+                        <h1 className="fs-3"><p className="m-1"><strong>Front End | Blockchain</strong></p>
+                        <p className="m-1"><strong>Developer</strong></p></h1>
+                </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
