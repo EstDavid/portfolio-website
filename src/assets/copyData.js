@@ -141,9 +141,9 @@ export const mainLinks = {
 }
 
 export const home = {
-    titleQuestion: 'Looking for a Blockchain Developer?',
+    titleQuestion: 'Looking for a Front End | Blockchain Developer?',
     title: "Hey, I'm David",
-    titleCaption: "I'm a blockchain developer with experience in trading",
+    titleCaption: "I'm a developer with experience in Front End and Blockchain",
     backgroundImage
 };
 
@@ -241,17 +241,13 @@ export const projects = [
 
 export const about = {
     title1: 'Hey there!',
-    title2: "I'm a Blockchain Developer with experience in trading",
+    title2: "I'm a Developer with experience in Front End and Blockchain",
     descriptions: [
+        <span>My name is David, and I began to learn coding in the beginning of 2021.</span>,
+        <span>My initial focus was on Blockchain and learning to code smart contracts on Solidity. </span>,
         <span>
-            I have been in the crypto space since early 2018 as an investor and a trader. 
-            In 2021 I took my interest for crypto to a new level and became a blockchain developer.
-        </span>,
-        // <span>
-        //     My original background is in Mechanical Engineering, 
-        //     where I worked for many years in the design of systems from trains and locomotives.
-        // </span>,
-
+            The need to showcase my projects brought me to learn Frontend Development and made me realize that I also really enjoy this area of software development.
+        </span>
     ]
 
 }
