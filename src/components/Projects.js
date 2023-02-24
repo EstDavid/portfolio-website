@@ -17,12 +17,14 @@ const Projects = () => {
                     </div>
                 </div>
 
-                <div className="row">
+                <div className="row row-cols-1 row-cols-lg-2 g-4">
                     {projects.map((project, index) => {
                         return (
-                            <ProjectFigure key={index}
-                                project={project}
-                            />
+                            <div className="col">
+                                <ProjectFigure key={index}
+                                    project={project} descriptionId={`project-${index}`}
+                                />
+                            </div>
                         )
 
                     })}
