@@ -4,6 +4,7 @@ import React from 'react';
 import deltaRadarProject from './projectDeltaRadar.png';
 import dolphinanceProject from './projectDolphinance.png';
 import uniChartsProject from './projectUniCharts.png';
+import pixelArtProject from './projectPixelArt.png'
 import cvDocument from './CV Developer - David de Esteban.pdf';
 import backgroundImage from './background.png';
 
@@ -25,17 +26,42 @@ export const completeSkillSet = [
         isLanguage: false,
     },
     {
+        name: 'Node.js',
+        isGeneral: true,
+        isFramework: true,
+        iconText: 'nodejs-plain'
+    },
+    {
+        name: 'React',
+        isGeneral: true,
+        isFramework: true,
+        iconText: 'react-original'
+    },
+    {
+        name: 'Redux',
+        isGeneral: true,
+        isFramework: true,
+        iconText: 'redux-original'
+    },    
+    {
+        name: 'MongoDB',
+        isGeneral: true,
+        isFramework: true,
+        iconText: 'mongodb-plain'
+    },
+    {
+        name: 'Bootstrap',
+        isGeneral: true,
+        isFramework: true,
+        iconText: 'bootstrap-plain'
+    },
+    {
         name: 'Truffle',
         isBlockchain: true,
         isFramework: true,
     },
     {
         name: 'Ganache',
-        isBlockchain: true,
-        isFramework: true,
-    },
-    {
-        name: 'Hardhat',
         isBlockchain: true,
         isFramework: true,
     },
@@ -74,30 +100,6 @@ export const completeSkillSet = [
         iconText: 'typescript-plain'
     },
     {
-        name: 'Node.js',
-        isGeneral: true,
-        isFramework: true,
-        iconText: 'nodejs-plain'
-    },
-    {
-        name: 'React',
-        isGeneral: true,
-        isFramework: true,
-        iconText: 'react-original'
-    },
-    {
-        name: 'Redux',
-        isGeneral: true,
-        isFramework: true,
-        iconText: 'redux-original'
-    },
-    {
-        name: 'Bootstrap',
-        isGeneral: true,
-        isFramework: true,
-        iconText: 'bootstrap-plain'
-    },
-    {
         name: 'Git',
         isGeneral: true,
         isFramework: true,
@@ -115,6 +117,12 @@ export const completeSkillSet = [
         isFramework: true,
         iconText: 'vscode-plain'
     },
+    {
+        name: 'Hardhat',
+        isBlockchain: true,
+        isFramework: true,
+    }
+
 ];
 
 export const skillCategories = [
@@ -177,6 +185,7 @@ export const projects = [
             'Node.js',
             'React',
             'Redux',
+            'MongoDB',
             'Bootstrap'
         ],
         demoCodeURLs: [
@@ -229,12 +238,31 @@ export const projects = [
             'Javascript',
             'Node.js',
             'React',
-            'Redux'
+            'Redux',
+            'MongoDB'
         ],
         demoCodeURLs: [
             'http://uniswapv3-charts.herokuapp.com/',
             'https://github.com/EstDavid/uniswapv3-charts',
             'https://github.com/EstDavid/UniswapV3OracleReader'
+        ]
+    },
+    {
+        title: 'Pixel Artifier',
+        image: pixelArtProject,
+        description: [
+            <h5>Pixel Art App</h5>,
+            <span>The 'Pixel Artifier' app is a Single Page Application app which allows the user to paint on a 'pixel-like' square canvas, which can have the sizes of (8 x 8), (12 x 12), (16 x 16), or (32 x 32) pixels.</span>
+        ],
+        skillSets: [
+            'Javascript',
+            'Node.js',
+            'React',
+            'Bootstrap'
+        ],
+        demoCodeURLs: [
+            'https://estdavid.github.io/pixel-art-app/',
+            'https://github.com/EstDavid/pixel-art-app'
         ]
     }
 ];
