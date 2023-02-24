@@ -3,7 +3,7 @@ import { home, mainLinks } from '../assets/copyData';
 
 const Home = () => {
     return (
-        <section className="bg-home bg-light d-table w-100 active" 
+        <section className="bg-home bg-light d-table w-100 active mt-3" 
             style={{
                 backgroundImage:`url(${home.backgroundImage})`,
                 backgroundSize:'cover',
