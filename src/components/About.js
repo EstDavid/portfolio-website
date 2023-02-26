@@ -37,21 +37,6 @@ const About = () => {
                                 <p key={index}>{description}</p>
                             )
                         })}
-
-                        <ul className="list-group list-group-horizontal list-group-flush">
-                            <li className="list-group-item social-icon">
-                                <a href={mainLinks.github} target="_blank" rel="noreferrer noopener"><i className="bi bi-github"></i></a>
-                            </li>
-                            <li className="list-group-item social-icon">
-                                <a href={mainLinks.linkedIn} target="_blank" rel="noreferrer noopener"><i className="bi bi-linkedin"></i></a>
-                            </li>
-                        </ul>
-
-                        <p>
-                            <a href="../assets/CV-David_de_Esteban.pdf" className="btn btn-dark" download>Download my CV
-                                <i className="bi bi-download ms-1"></i>
-                            </a>
-                        </p>
                     </div>
 
                     <div className="col">
