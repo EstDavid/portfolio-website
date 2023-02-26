@@ -275,7 +275,15 @@ export const about = {
         <span>My initial focus was on Blockchain and learning to code smart contracts on Solidity. </span>,
         <span>
             The need to showcase my projects brought me to learn Frontend Development and made me realize that I also really enjoy this area of software development.
-        </span>
+        </span>,
+        <span>
+            {'For finding out more, you can checkout here my '}
+            <a href={mainLinks.curriculum} target="_blank" rel="noreferrer noopener" >Curriculum Vitae (CV)</a>
+            {', or visit my profiles on '}
+            <a href={mainLinks.github} target="_blank" rel="noreferrer noopener" >Github</a>
+            {' and '} 
+            <a href={mainLinks.linkedIn} target="_blank" rel="noreferrer noopener" >LinkedIn</a>
+            </span>
     ]
 
 }
