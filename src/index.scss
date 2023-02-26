@@ -297,3 +297,8 @@ figure figcaption p {
   position: relative;
   text-align: center;
 }
+
+span > a {
+  text-decoration: none;
+  border-bottom: 4px solid $primary;
+}
