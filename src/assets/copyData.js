@@ -199,9 +199,9 @@ export const projects = [
         description: [
             <h5>Exchange Dapp with its own ERC-20 token</h5>,
             <span>Both corresponding smart contracts are deployed on the Rinkeby network <a 
-                href="https://rinkeby.etherscan.io/address/0x6723e472b9de9b329f344aa6c8dc80e67db92de8" target="_blank" rel="noreferrer noopener" >here (Dapp)
+                href="https://rinkeby.etherscan.io/address/0x6723e472b9de9b329f344aa6c8dc80e67db92de8" target="_blank" rel="noreferrer noopener" >here - Dapp -
                 </a> and <a 
-                href="https://rinkeby.etherscan.io/address/0x664c8fcf50a588d3208c729362685ea911522198" target="_blank" rel="noreferrer noopener" >here (ERC-20 token)</a></span>,
+                href="https://rinkeby.etherscan.io/address/0x664c8fcf50a588d3208c729362685ea911522198" target="_blank" rel="noreferrer noopener" >here - ERC-20 token -</a></span>,
             <span>Dolphinance is an exchange Dapp based on the capstone project from the <a 
             href="https://www.dappuniversity.com/" target="_blank" rel="noreferrer noopener" >
                     Dapp University</a> Blockchain Developer Bootcamp</span>,
@@ -278,7 +278,7 @@ export const about = {
         </span>,
         <span>
             {'For finding out more, you can checkout here my '}
-            <a href={mainLinks.curriculum} target="_blank" rel="noreferrer noopener" >Curriculum Vitae (CV)</a>
+            <a href={mainLinks.curriculum} target="_blank" rel="noreferrer noopener" >Curriculum Vitae - CV -</a>
             {', or visit my profiles on '}
             <a href={mainLinks.github} target="_blank" rel="noreferrer noopener" >Github</a>
             {' and '} 
