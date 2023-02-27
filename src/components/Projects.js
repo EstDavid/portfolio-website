@@ -4,8 +4,8 @@ import ProjectFigure from './ProjectFigure';
 
 const Projects = () => {
     return (
-        <section className="section bg-light" id="projects">
-            <div className="container">
+        <section className="section" id="projects">
+            <div className="container-fluid">
                 <div className="row justify-content-center">
                     <div className="col-12 text-center">
                         <div className="container-title text-center mb-4 pb-2">
@@ -17,18 +17,15 @@ const Projects = () => {
                     </div>
                 </div>
 
-                <div className="row row-cols-1 row-cols-lg-2 g-4">
                     {projects.map((project, index) => {
+                        const imageSecond = index % 2 === 0
                         return (
-                            <div className="col">
-                                <ProjectFigure key={index}
-                                    project={project} descriptionId={`project-${index}`}
-                                />
-                            </div>
+                            <ProjectFigure key={index}
+                                project={project} descriptionId={`project-${index}`} imageSecond={imageSecond}
+                            />
                         )
 
                     })}
-                </div>
             </div>
         </section>
     )
