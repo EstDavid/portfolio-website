@@ -109,7 +109,6 @@ code {
 figure {
   background: #fff;
   margin-bottom: 45px;
-  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.04), 0 2px 10px 0 rgba(0, 0, 0, 0.06);
 }
 figure .img-wrapper {
   max-height: 500px;
@@ -127,7 +126,7 @@ figure .img-wrapper {
   -webkit-transform: scale3d(1.2, 1.2, 1);
   transform: scale3d(1.2, 1.2, 1);
 } */
-figure:hover .overlay {
+figure .overlay:hover {
   opacity: 1;
 }
 /* figure:hover .overlay .btn-group-vertical a {
@@ -298,7 +297,6 @@ figure figcaption p {
   text-align: center;
 }
 
-span > a {
-  text-decoration: none;
-  border: 10px 0px 4px 0px solid $primary;
+a {
+  text-decoration: underline solid $primary 4px;
 }
