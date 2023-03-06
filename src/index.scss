@@ -298,5 +298,7 @@ figure figcaption p {
 }
 
 a {
-  text-decoration: underline solid $primary 4px;
+  text-decoration-line: underline;
+  text-decoration-thickness: 4px;
+  text-decoration-color: $primary;
 }
