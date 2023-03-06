@@ -28,7 +28,10 @@ const Navbar = () => {
                         })}
                     </ul>
 
-                    <ul className="list-group list-group-horizontal mb-0 mt-1 mt-sm-0">
+                    <ul className="list-group list-group-horizontal align-items-center mb-0 mt-1 mt-sm-0">
+                        <li className="list-group-item social-icon">
+                            <a href={mainLinks.blog} target="_blank" rel="noreferrer noopener" className="text-decoration-none"><p className="fs-2 m-0">Blog</p></a>
+                        </li>
                         <li className="list-group-item social-icon">
                             <a href={mainLinks.github} target="_blank" rel="noreferrer noopener"><i className="bi bi-github" style={{fontSize: "2rem"}}></i></a>
                         </li>

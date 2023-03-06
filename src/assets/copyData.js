@@ -145,7 +145,8 @@ export const mainLinks = {
     github: 'https://github.com/EstDavid/',
     linkedIn: 'https://www.linkedin.com/in/david-de-esteban',
     curriculum: 'https://drive.google.com/file/d/18Ep_vnJHpmnoUjvMV824ZLY84qyYiPm8/view?usp=share_link',
-    cv: cvDocument
+    cv: cvDocument,
+    blog: 'https://blog.davidesteban.dev'
 }
 
 export const home = {
