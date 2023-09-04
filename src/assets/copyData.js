@@ -152,7 +152,11 @@ export const mainLinks = {
 export const home = {
     titleQuestion: 'Looking for a Front End | Blockchain Developer?',
     title: "Hey, I'm David",
-    titleCaption: "I am software developer since 2021. My background is in Mechanical Engineering, with over 15 years ofexperience in the railway industry. I have developed several web apps with JavaScript, using mostly React and Redux. Some of these apps interact with the blockchain.",
+    titleCaption: <p>
+        {'I am a software developer since 2021. My background is in Mechanical Engineering, with over 15 years of experience in the railway industry.'}
+        <br></br>
+        {'I have developed several web apps with JavaScript, using React and Redux. Some of these apps interact with the blockchain.'}
+    </p>,
     backgroundImage
 };
 
