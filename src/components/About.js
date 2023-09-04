@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import { about, skillCategories, completeSkillSet, getIconSymbol, mainLinks} from '../assets/copyData';
+import React, { useState } from 'react';
+import { about, skillCategories, completeSkillSet, getIconSymbol } from '../assets/copyData';
 
 const About = () => {
 
@@ -11,7 +11,7 @@ const About = () => {
         const skillSetKey = skillCategories[skillSetSelection].key;
         return skill[skillSetKey];
     });
-    
+
     const handleSelectionChange = (index) => {
         setSelection(index);
     }
@@ -42,36 +42,36 @@ const About = () => {
                     <div className="col">
                         <h2>Skills</h2>
                         <div className="d-flex justify-content-start">
-                                    {skillCategories.map((category, index) => {
-                                        return(
-                                            <div key={index} className="m-1">
-                                                <input
-                                                    type="radio"
-                                                    className="btn-check"
-                                                    name="btnradio"
-                                                    id={`btnradio${index}`}
-                                                    autoComplete="off"
-                                                    checked={index === skillSetSelection ? true : false}
-                                                    onChange={() => handleSelectionChange(index, category.key)}
-                                                ></input>
-                                                <label
-                                                    className="btn btn-outline-primary"
-                                                    htmlFor={`btnradio${index}`}
-                                                >{category.name}</label>
-                                            </div>
-                                        )
-                                    })}
+                            {skillCategories.map((category, index) => {
+                                return (
+                                    <div key={index} className="m-1">
+                                        <input
+                                            type="radio"
+                                            className="btn-check"
+                                            name="btnradio"
+                                            id={`btnradio${index}`}
+                                            autoComplete="off"
+                                            checked={index === skillSetSelection ? true : false}
+                                            onChange={() => handleSelectionChange(index, category.key)}
+                                        ></input>
+                                        <label
+                                            className="btn btn-outline-primary"
+                                            htmlFor={`btnradio${index}`}
+                                        >{category.name}</label>
+                                    </div>
+                                )
+                            })}
                         </div>
-                            <div className="d-flex flex-wrap">
-                                {currentSkillSet.map((skill, index) => {
-                                    return(
-                                        <button key={index} type="button" className="btn btn-outline-success m-1" disabled>
-                                            {skill.iconText ? getIconSymbol(skill.iconText) : ''}
-                                            {skill.name}
-                                        </button>
-                                    )
-                                })}
-                            </div>                           
+                        <div className="d-flex flex-wrap">
+                            {currentSkillSet.map((skill, index) => {
+                                return (
+                                    <button key={index} type="button" className="btn btn-outline-success m-1" disabled>
+                                        {skill.iconText ? getIconSymbol(skill.iconText) : ''}
+                                        {skill.name}
+                                    </button>
+                                )
+                            })}
+                        </div>
 
                     </div>
                 </div>

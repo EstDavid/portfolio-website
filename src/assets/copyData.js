@@ -42,7 +42,7 @@ export const completeSkillSet = [
         isGeneral: true,
         isFramework: true,
         iconText: 'redux-original'
-    },    
+    },
     {
         name: 'MongoDB',
         isGeneral: true,
@@ -152,7 +152,7 @@ export const mainLinks = {
 export const home = {
     titleQuestion: 'Looking for a Front End | Blockchain Developer?',
     title: "Hey, I'm David",
-    titleCaption: "I'm a developer with experience in Front End and Blockchain",
+    titleCaption: "I am software developer since 2021. My background is in Mechanical Engineering, with over 15 years ofexperience in the railway industry. I have developed several web apps with JavaScript, using mostly React and Redux. Some of these apps interact with the blockchain.",
     backgroundImage
 };
 
@@ -170,8 +170,8 @@ export const projects = [
                 <li className="list-group-item">Calculating the optimum amount of the first token in the trade sequence</li>
                 <li className="list-group-item">Triggering a smart contract with flash loan capabilities which attempts to catch the potential profit</li>
             </ul>,
-            <span>        
-            The app displays the historic output from the trading bot scanner module and allows to search and filter past potential trades, according to criteria such as profitability, date, token or exchange 
+            <span>
+                The app displays the historic output from the trading bot scanner module and allows to search and filter past potential trades, according to criteria such as profitability, date, token or exchange
             </span>
         ],
         skillSets: [
@@ -199,13 +199,13 @@ export const projects = [
         image: dolphinanceProject,
         description: [
             <h5>Exchange Dapp with its own ERC-20 token</h5>,
-            <span>Both corresponding smart contracts are deployed on the Rinkeby network <a 
+            <span>Both corresponding smart contracts are deployed on the Rinkeby network <a
                 href="https://rinkeby.etherscan.io/address/0x6723e472b9de9b329f344aa6c8dc80e67db92de8" target="_blank" rel="noreferrer noopener" >here - Dapp -
-                </a> and <a 
+            </a> and <a
                 href="https://rinkeby.etherscan.io/address/0x664c8fcf50a588d3208c729362685ea911522198" target="_blank" rel="noreferrer noopener" >here - ERC-20 token -</a></span>,
-            <span>Dolphinance is an exchange Dapp based on the capstone project from the <a 
-            href="https://www.dappuniversity.com/" target="_blank" rel="noreferrer noopener" >
-                    Dapp University</a> Blockchain Developer Bootcamp</span>,
+            <span>Dolphinance is an exchange Dapp based on the capstone project from the <a
+                href="https://www.dappuniversity.com/" target="_blank" rel="noreferrer noopener" >
+                Dapp University</a> Blockchain Developer Bootcamp</span>,
             <span>The dapp allows <strong>buying and selling</strong> the native token of the exchange, <strong>deposits and withdrawals</strong>, <strong>placing limit orders</strong> and tracking token price</span>,
         ],
         skillSets: [
@@ -282,16 +282,16 @@ export const about = {
             <a href={mainLinks.curriculum} target="_blank" rel="noreferrer noopener" >Curriculum Vitae - CV -</a>
             {', or visit my profiles on '}
             <a href={mainLinks.github} target="_blank" rel="noreferrer noopener" >Github</a>
-            {' and '} 
+            {' and '}
             <a href={mainLinks.linkedIn} target="_blank" rel="noreferrer noopener" >LinkedIn</a>
-            </span>
+        </span>
     ]
 
 }
 
 export const getSkill = (skillName) => {
-    for(let skill of completeSkillSet) {
-        if(skill.name === skillName) {
+    for (let skill of completeSkillSet) {
+        if (skill.name === skillName) {
             return skill;
         }
     }
