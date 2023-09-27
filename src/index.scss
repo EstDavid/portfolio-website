@@ -81,23 +81,22 @@ code {
 }
 
 /*-- Home --*/
-.bg-home {
-	padding: 260px 0;
-	background-size: cover;
-	align-self: center;
-	position: relative;
-	background-position: center center;
+.hero-image {
+  background-size: cover;
+  background-position: 0 15%;
+  background-repeat: no-repeat;
+  // position: relative;
 }
 
-.bg-light {
-	background-color: #f9fafd !important;
-  --bs-bg-opacity: 1;
+@media (max-width: 480px) {
+  .hero-image {
+    background-position: center;
+  }
 }
 
 /*-- Portfolio --*/
 .bg-light {
 	background: #f6f7fa;
-	opacity: 1;
 }
 
 .section {
@@ -116,23 +115,11 @@ figure .img-wrapper {
   position: relative;
   overflow: hidden;
 }
-/* figure img {
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
-  -webkit-transition: -webkit-transform 400ms;
-  transition: transform 400ms;
-} */
-/* figure:hover img {
-  -webkit-transform: scale3d(1.2, 1.2, 1);
-  transform: scale3d(1.2, 1.2, 1);
-} */
+
 figure .overlay:hover {
   opacity: 1;
 }
-/* figure:hover .overlay .btn-group-vertical a {
-  -webkit-transform: scale3d(1, 1, 1);
-  transform: scale3d(1, 1, 1);
-} */
+
 figure .overlay {
   position: absolute;
   top: 0;
@@ -146,6 +133,7 @@ figure .overlay {
   -webkit-transition: opacity 400ms;
   transition: opacity 400ms;
 }
+
 figure .overlay a {
   display: inline-block;
   color: #fff;
@@ -159,13 +147,16 @@ figure .overlay a {
   -webkit-transition: all 400ms;
   transition: all 400ms;
 }
+
 figure .overlay a:hover {
   text-decoration: none;
 }
+
 figure .overlay:hover a {
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
 }
+
 figure .project-buttons {
   position: absolute;
   top: 45%;
@@ -174,23 +165,28 @@ figure .project-buttons {
   -ms-transform: translate(-50%, -50%);
   text-align: center;
 }
+
 figure .project-skillset {
   position: absolute;
   bottom: 5%;
   text-align: center;
 }
+
 figure figcaption {
   padding: 20px 25px;
   margin-top: 0;
   color: #666;
 }
+
 figure figcaption h4 {
   margin: 0;
 }
+
 figure figcaption h4 a {
   color: $primary;
   text-decoration:none;
 }
+
 figure figcaption p {
   font-size: 14px;
   margin-bottom: 0;
@@ -203,25 +199,6 @@ figure figcaption p {
   height: auto;
 }
 
-/* .fancybox-close {
-  background: url("../images/icons/close.png") no-repeat scroll 0 0 transparent;
-  height: 50px;
-  right: 0;
-  top: 0;
-  width: 50px;
-}
-.fancybox-next span {
-  background: url("../images/icons/right.png") no-repeat scroll center center #009ee3;
-  height: 50px;
-  width: 50px;
-  right: 0;
-}
-.fancybox-prev span {
-  background: url("../images/icons/left.png") no-repeat scroll center center #009ee3;
-  height: 50px;
-  width: 50px;
-  left: 0;
-} */
 .fancybox-title h3 {
   font-size: 15px;
   margin: 0;

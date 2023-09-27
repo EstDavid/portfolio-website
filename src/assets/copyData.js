@@ -4,7 +4,10 @@ import React from 'react';
 import deltaRadarProject from './projectDeltaRadar.png';
 import dolphinanceProject from './projectDolphinance.png';
 import uniChartsProject from './projectUniCharts.png';
-import pixelArtProject from './projectPixelArt.png'
+import pixelArtProject from './projectPixelArt.png';
+import puraVidaProject from './projectPuraVida.jpg';
+import finiteElements from './finiteElements.png';
+import driversDesk from './driversDesk.png';
 import cvDocument from './CV Developer - David de Esteban.pdf';
 import backgroundImage from './background.png';
 
@@ -38,16 +41,28 @@ export const completeSkillSet = [
         iconText: 'react-original'
     },
     {
+        name: 'React Native',
+        isGeneral: true,
+        isFramework: true,
+        iconText: 'react-original'
+    },
+    {
         name: 'Redux',
         isGeneral: true,
         isFramework: true,
         iconText: 'redux-original'
-    },    
+    },
     {
         name: 'MongoDB',
         isGeneral: true,
         isFramework: true,
         iconText: 'mongodb-plain'
+    },
+    {
+        name: 'GraphQL',
+        isGeneral: true,
+        isFramework: true,
+        iconText: 'graphql-plain'
     },
     {
         name: 'Bootstrap',
@@ -58,12 +73,12 @@ export const completeSkillSet = [
     {
         name: 'Truffle',
         isBlockchain: true,
-        isFramework: true,
+        isFramework: false,
     },
     {
         name: 'Ganache',
         isBlockchain: true,
-        isFramework: true,
+        isFramework: false,
     },
     {
         name: 'Flash Swaps',
@@ -120,23 +135,23 @@ export const completeSkillSet = [
     {
         name: 'Hardhat',
         isBlockchain: true,
-        isFramework: true,
+        isFramework: false,
     }
 
 ];
 
 export const skillCategories = [
     {
-        name: 'Blockchain',
-        key: 'isBlockchain'
+        name: 'Frameworks/Tools',
+        key: 'isFramework'
     },
     {
         name: 'Languages',
         key: 'isLanguage'
     },
     {
-        name: 'Frameworks/Tools',
-        key: 'isFramework'
+        name: 'Blockchain',
+        key: 'isBlockchain'
     }
 ];
 
@@ -144,19 +159,42 @@ export const mainLinks = {
     email: 'mailto:estdav@protonmail.com',
     github: 'https://github.com/EstDavid/',
     linkedIn: 'https://www.linkedin.com/in/david-de-esteban',
-    curriculum: 'https://drive.google.com/file/d/18Ep_vnJHpmnoUjvMV824ZLY84qyYiPm8/view?usp=share_link',
+    curriculum: 'https://drive.google.com/file/d/1L-rVwHZh2PeKwp_lcviP5d5DTyovP7OM/view?usp=sharing',
     cv: cvDocument,
     blog: 'https://blog.davidesteban.dev'
 }
 
 export const home = {
-    titleQuestion: 'Looking for a Front End | Blockchain Developer?',
+    titleQuestion: 'Fullstack Developer',
     title: "Hey, I'm David",
-    titleCaption: "I'm a developer with experience in Front End and Blockchain",
+    titleCaption: "I'm a developer with experience in Front End, Backend and Blockchain",
     backgroundImage
 };
 
 export const projects = [
+    {
+        title: 'Festival App (Work in Progress)',
+        image: puraVidaProject,
+        description: [
+            <h5>App for planning your activities in a Spiritual Festival</h5>,
+            <span>There can be lots of very enriching and transforming activities and events to attend at a Spiritual Festival</span>,
+            <span>This App allows you to choose an plan your activities, get around the different areas, find the healers you will visit.</span>,
+            <span>It stores the information in the phone's local storage so you don't have to worry about poor internet connections</span>,
+        ],
+        skillSets: [
+            'React Native',
+            'Javascript',
+            'Node.js',
+            'Redux',
+            'GraphQL',
+        ],
+        demoCodeURLs: [
+            {
+                url: 'https://github.com/EstDavid/pura-vida-app',
+                name: 'Code'
+            }
+        ]
+    },
     {
         title: 'Delta Radar',
         image: deltaRadarProject,
@@ -170,8 +208,8 @@ export const projects = [
                 <li className="list-group-item">Calculating the optimum amount of the first token in the trade sequence</li>
                 <li className="list-group-item">Triggering a smart contract with flash loan capabilities which attempts to catch the potential profit</li>
             </ul>,
-            <span>        
-            The app displays the historic output from the trading bot scanner module and allows to search and filter past potential trades, according to criteria such as profitability, date, token or exchange 
+            <span>
+                The app displays the historic output from the trading bot scanner module and allows to search and filter past potential trades, according to criteria such as profitability, date, token or exchange
             </span>
         ],
         skillSets: [
@@ -190,8 +228,14 @@ export const projects = [
             'Bootstrap'
         ],
         demoCodeURLs: [
-            'http://delta-radar.herokuapp.com/',
-            'https://github.com/EstDavid/delta-radar'
+            {
+                url: 'http://delta-radar.herokuapp.com/',
+                name: 'Live Demo'
+            },
+            {
+                url: 'https://github.com/EstDavid/delta-radar',
+                name: 'Frontend Code'
+            }
         ]
     },
     {
@@ -199,13 +243,13 @@ export const projects = [
         image: dolphinanceProject,
         description: [
             <h5>Exchange Dapp with its own ERC-20 token</h5>,
-            <span>Both corresponding smart contracts are deployed on the Rinkeby network <a 
+            <span>Both corresponding smart contracts are deployed on the Rinkeby network <a
                 href="https://rinkeby.etherscan.io/address/0x6723e472b9de9b329f344aa6c8dc80e67db92de8" target="_blank" rel="noreferrer noopener" >here - Dapp -
-                </a> and <a 
+            </a> and <a
                 href="https://rinkeby.etherscan.io/address/0x664c8fcf50a588d3208c729362685ea911522198" target="_blank" rel="noreferrer noopener" >here - ERC-20 token -</a></span>,
-            <span>Dolphinance is an exchange Dapp based on the capstone project from the <a 
-            href="https://www.dappuniversity.com/" target="_blank" rel="noreferrer noopener" >
-                    Dapp University</a> Blockchain Developer Bootcamp</span>,
+            <span>Dolphinance is an exchange Dapp based on the capstone project from the <a
+                href="https://www.dappuniversity.com/" target="_blank" rel="noreferrer noopener" >
+                Dapp University</a> Blockchain Developer Bootcamp</span>,
             <span>The dapp allows <strong>buying and selling</strong> the native token of the exchange, <strong>deposits and withdrawals</strong>, <strong>placing limit orders</strong> and tracking token price</span>,
         ],
         skillSets: [
@@ -219,8 +263,14 @@ export const projects = [
             'Redux'
         ],
         demoCodeURLs: [
-            'http://dlp-token-exchange.herokuapp.com/',
-            'https://github.com/EstDavid/DappExchange'
+            {
+                url: 'http://dlp-token-exchange.herokuapp.com/',
+                name: 'Live Demo'
+            },
+            {
+                url: 'https://github.com/EstDavid/DappExchange',
+                name: 'Frontend Code'
+            }
         ]
     },
     {
@@ -243,9 +293,18 @@ export const projects = [
             'MongoDB'
         ],
         demoCodeURLs: [
-            'http://uniswapv3-charts.herokuapp.com/',
-            'https://github.com/EstDavid/uniswapv3-charts',
-            'https://github.com/EstDavid/UniswapV3OracleReader'
+            {
+                url: 'http://uniswapv3-charts.herokuapp.com/',
+                name: 'Live Demo'
+            },
+            {
+                url: 'https://github.com/EstDavid/uniswapv3-charts',
+                name: 'Frontend Code'
+            },
+            {
+                url: 'https://github.com/EstDavid/UniswapV3OracleReader',
+                name: 'Backend code'
+            }
         ]
     },
     {
@@ -262,36 +321,46 @@ export const projects = [
             'Bootstrap'
         ],
         demoCodeURLs: [
-            'https://estdavid.github.io/pixel-art-app/',
-            'https://github.com/EstDavid/pixel-art-app'
+            {
+                url: 'https://estdavid.github.io/pixel-art-app/',
+                name: 'Live Demo'
+            },
+            {
+                url: 'https://github.com/EstDavid/pixel-art-app',
+                name: 'Frontend Code'
+            }
         ]
     }
 ];
 
 export const about = {
     title1: 'Hey there!',
-    title2: "I'm a Developer with experience in Front End and Blockchain",
+    title2: "I'm a Fullstack JavaScript Developer",
     descriptions: [
-        <span>My name is David, and I began to learn coding in the beginning of 2021.</span>,
-        <span>My initial focus was on Blockchain and learning to code smart contracts on Solidity. </span>,
+        <span>My name is David, and I come from a background as Mechanical Engineer designing and calculating systems for trains and locomotives.</span>,
+        <div className='d-flex flex-row'>
+            <img src={driversDesk} alt='' className='w-50 p-1' />
+            <img src={finiteElements} alt='' className='w-50 p-1' />
+        </div>,
+        <span>I began to learn coding in the beginning of 2021. My initial focus was on Blockchain and learning to code smart contracts on Solidity. </span>,
         <span>
-            The need to showcase my projects brought me to learn Frontend Development and made me realize that I also really enjoy this area of software development.
+            The need to showcase my projects brought me to learn Frontend and Fullstack Development, and made me realize that I really enjoy this area of software development.
         </span>,
         <span>
             {'For finding out more, you can checkout here my '}
             <a href={mainLinks.curriculum} target="_blank" rel="noreferrer noopener" >Curriculum Vitae - CV -</a>
             {', or visit my profiles on '}
             <a href={mainLinks.github} target="_blank" rel="noreferrer noopener" >Github</a>
-            {' and '} 
+            {' and '}
             <a href={mainLinks.linkedIn} target="_blank" rel="noreferrer noopener" >LinkedIn</a>
-            </span>
+        </span>
     ]
 
 }
 
 export const getSkill = (skillName) => {
-    for(let skill of completeSkillSet) {
-        if(skill.name === skillName) {
+    for (let skill of completeSkillSet) {
+        if (skill.name === skillName) {
             return skill;
         }
     }
