@@ -1,6 +1,18 @@
 import React, { useState } from 'react';
 import { getSkill, getIconSymbol } from '../assets/copyData';
 
+const LinkButton = ({ url, text, focused }) => {
+    return (
+        <a
+            type="button"
+            className={`d-flex btn justify-content-center ${focused ? 'btn-primary' : 'btn-outline-primary'}`}
+            target="_blank" rel="noreferrer noopener"
+            href={url}>
+            {text}
+        </a>
+    )
+}
+
 const ProjectFigure = (props) => {
     const { project, descriptionId, imageSecond } = props;
 
@@ -18,35 +30,16 @@ const ProjectFigure = (props) => {
                 <img src={project.image} className="img-responsive" alt={project.title} ></img>
                 <div className="overlay">
                     <div className="project-buttons" role="group">
-                        <a
-                            type="button"
-                            className="d-flex btn btn-primary justify-content-center"
-                            target="_blank" rel="noreferrer noopener"
-                            href={project.demoCodeURLs[0]}>Live Demo
-                        </a>
-                        {project.demoCodeURLs.length === 2 ?
-                            <a
-                                type="button"
-                                className="d-flex btn btn-outline-primary justify-content-center"
-                                target="_blank" rel="noreferrer noopener"
-                                href={project.demoCodeURLs[1]}
-                            >Code</a>
-                            :
-                            <div className="d-flex">
-                                <a
-                                    type="button"
-                                    className="btn btn-outline-primary"
-                                    target="_blank" rel="noreferrer noopener"
-                                    href={project.demoCodeURLs[1]}
-                                >Frontend Code</a>
-                                <a
-                                    type="button"
-                                    className="btn btn-outline-primary"
-                                    target="_blank" rel="noreferrer noopener"
-                                    href={project.demoCodeURLs[2]}
-                                >Backend Code</a>
-                            </div>
-                        }
+                        {project.demoCodeURLs.map((urlObject, index) => {
+                            return (
+                                <LinkButton
+                                    key={index}
+                                    url={urlObject.url}
+                                    text={urlObject.name}
+                                    focused={index === 0 ? true : false}
+                                />
+                            )
+                        })}
                     </div>
                 </div>
             </div>
@@ -59,28 +52,16 @@ const ProjectFigure = (props) => {
                     </h4>
                     <div className='text-center'>
                         <div className="btn-group mt-2 mb-2" role="group">
-                            <a
-                                type="button"
-                                className="d-flex btn btn-primary justify-content-center"
-                                target="_blank" rel="noreferrer noopener"
-                                href={project.demoCodeURLs[0]}>Live Demo
-                            </a>
-                            <a
-                                type="button"
-                                className="d-flex btn btn-outline-primary justify-content-center"
-                                target="_blank" rel="noreferrer noopener"
-                                href={project.demoCodeURLs[1]}
-                            >{project.demoCodeURLs.length === 2 ? 'Code' : 'Frontend Code'}</a>
-                            {project.demoCodeURLs.length === 2 ?
-                                ''
-                                :
-                                <a
-                                    type="button"
-                                    className="btn btn-outline-primary"
-                                    target="_blank" rel="noreferrer noopener"
-                                    href={project.demoCodeURLs[2]}
-                                >Backend Code</a>
-                            }
+                            {project.demoCodeURLs.map((urlObject, index) => {
+                                return (
+                                    <LinkButton
+                                        key={index}
+                                        url={urlObject.url}
+                                        text={urlObject.name}
+                                        focused={index === 0 ? true : false}
+                                    />
+                                )
+                            })}
                         </div>
                     </div>
                     <div className={`read-more-paragraph collapse ${showText ? "show" : ""}`} id={descriptionId}>

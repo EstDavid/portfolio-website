@@ -3,14 +3,14 @@ import { mainLinks } from '../assets/copyData';
 
 const Navbar = () => {
 
-    const navLinks = [ 'home', 'projects', 'about', 'contact' ];
+    const navLinks = ['home', 'projects', 'about', 'contact'];
 
     return (
-        <nav id="navbar" className="navbar navbar-expand-lg fixed-top navbar-custom navbar-light sticky">
-    		<div className="container">
+        <nav id="navbar" className="navbar navbar-expand-lg sticky-top navbar-custom navbar-light sticky">
+            <div className="container">
                 <a className="navbar-brand d-flex align-items-center" href="#top">
                     <span className="badge bg-primary me-2 fs-1">D</span>
-                        <h1 className="fs-3"><p className="m-1"><strong>Front End | Blockchain</strong></p>
+                    <h1 className="fs-3"><p className="m-1"><strong>JavaScript Fullstack</strong></p>
                         <p className="m-1"><strong>Developer</strong></p></h1>
                 </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,18 +33,18 @@ const Navbar = () => {
                             <a href={mainLinks.blog} target="_blank" rel="noreferrer noopener" className="text-decoration-none"><p className="fs-2 m-0">Blog</p></a>
                         </li>
                         <li className="list-group-item social-icon">
-                            <a href={mainLinks.github} target="_blank" rel="noreferrer noopener"><i className="bi bi-github" style={{fontSize: "2rem"}}></i></a>
+                            <a href={mainLinks.github} target="_blank" rel="noreferrer noopener"><i className="bi bi-github" style={{ fontSize: "2rem" }}></i></a>
                         </li>
                         <li className="list-group-item social-icon">
-                            <a href={mainLinks.linkedIn} target="_blank" rel="noreferrer noopener"><i className="bi bi-linkedin" style={{fontSize: "2rem"}}></i></a>
+                            <a href={mainLinks.linkedIn} target="_blank" rel="noreferrer noopener"><i className="bi bi-linkedin" style={{ fontSize: "2rem" }}></i></a>
                         </li>
                         <li className="list-group-item social-icon">
-                            <a href={mainLinks.cv} target="_blank" rel="noreferrer noopener"><i className="bi bi-file-earmark-text" style={{fontSize: "2rem"}}></i></a>
+                            <a href={mainLinks.cv} target="_blank" rel="noreferrer noopener"><i className="bi bi-file-earmark-text" style={{ fontSize: "2rem" }}></i></a>
                         </li>
                     </ul>
-                </div> 
+                </div>
             </div>
-		</nav>
+        </nav>
     )
 }
 

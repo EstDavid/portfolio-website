@@ -4,7 +4,10 @@ import React from 'react';
 import deltaRadarProject from './projectDeltaRadar.png';
 import dolphinanceProject from './projectDolphinance.png';
 import uniChartsProject from './projectUniCharts.png';
-import pixelArtProject from './projectPixelArt.png'
+import pixelArtProject from './projectPixelArt.png';
+import puraVidaProject from './projectPuraVida.jpg';
+import finiteElements from './finiteElements.png';
+import driversDesk from './driversDesk.png';
 import cvDocument from './CV Developer - David de Esteban.pdf';
 import backgroundImage from './background.png';
 
@@ -38,6 +41,12 @@ export const completeSkillSet = [
         iconText: 'react-original'
     },
     {
+        name: 'React Native',
+        isGeneral: true,
+        isFramework: true,
+        iconText: 'react-original'
+    },
+    {
         name: 'Redux',
         isGeneral: true,
         isFramework: true,
@@ -50,6 +59,12 @@ export const completeSkillSet = [
         iconText: 'mongodb-plain'
     },
     {
+        name: 'GraphQL',
+        isGeneral: true,
+        isFramework: true,
+        iconText: 'graphql-plain'
+    },
+    {
         name: 'Bootstrap',
         isGeneral: true,
         isFramework: true,
@@ -58,12 +73,12 @@ export const completeSkillSet = [
     {
         name: 'Truffle',
         isBlockchain: true,
-        isFramework: true,
+        isFramework: false,
     },
     {
         name: 'Ganache',
         isBlockchain: true,
-        isFramework: true,
+        isFramework: false,
     },
     {
         name: 'Flash Swaps',
@@ -120,23 +135,23 @@ export const completeSkillSet = [
     {
         name: 'Hardhat',
         isBlockchain: true,
-        isFramework: true,
+        isFramework: false,
     }
 
 ];
 
 export const skillCategories = [
     {
-        name: 'Blockchain',
-        key: 'isBlockchain'
+        name: 'Frameworks/Tools',
+        key: 'isFramework'
     },
     {
         name: 'Languages',
         key: 'isLanguage'
     },
     {
-        name: 'Frameworks/Tools',
-        key: 'isFramework'
+        name: 'Blockchain',
+        key: 'isBlockchain'
     }
 ];
 
@@ -144,23 +159,42 @@ export const mainLinks = {
     email: 'mailto:estdav@protonmail.com',
     github: 'https://github.com/EstDavid/',
     linkedIn: 'https://www.linkedin.com/in/david-de-esteban',
-    curriculum: 'https://drive.google.com/file/d/18Ep_vnJHpmnoUjvMV824ZLY84qyYiPm8/view?usp=share_link',
+    curriculum: 'https://drive.google.com/file/d/1L-rVwHZh2PeKwp_lcviP5d5DTyovP7OM/view?usp=sharing',
     cv: cvDocument,
     blog: 'https://blog.davidesteban.dev'
 }
 
 export const home = {
-    titleQuestion: 'Looking for a Front End | Blockchain Developer?',
+    titleQuestion: 'Fullstack Developer',
     title: "Hey, I'm David",
-    titleCaption: <p>
-        {'I am a software developer since 2021. My background is in Mechanical Engineering, with over 15 years of experience in the railway industry.'}
-        <br></br>
-        {'I have developed several web apps with JavaScript, using React and Redux. Some of these apps interact with the blockchain.'}
-    </p>,
+    titleCaption: "I'm a developer with experience in Front End, Backend and Blockchain",
     backgroundImage
 };
 
 export const projects = [
+    {
+        title: 'Festival App (Work in Progress)',
+        image: puraVidaProject,
+        description: [
+            <h5>App for planning your activities in a Spiritual Festival</h5>,
+            <span>There can be lots of very enriching and transforming activities and events to attend at a Spiritual Festival</span>,
+            <span>This App allows you to choose an plan your activities, get around the different areas, find the healers you will visit.</span>,
+            <span>It stores the information in the phone's local storage so you don't have to worry about poor internet connections</span>,
+        ],
+        skillSets: [
+            'React Native',
+            'Javascript',
+            'Node.js',
+            'Redux',
+            'GraphQL',
+        ],
+        demoCodeURLs: [
+            {
+                url: 'https://github.com/EstDavid/pura-vida-app',
+                name: 'Code'
+            }
+        ]
+    },
     {
         title: 'Delta Radar',
         image: deltaRadarProject,
@@ -194,8 +228,14 @@ export const projects = [
             'Bootstrap'
         ],
         demoCodeURLs: [
-            'http://delta-radar.herokuapp.com/',
-            'https://github.com/EstDavid/delta-radar'
+            {
+                url: 'http://delta-radar.herokuapp.com/',
+                name: 'Live Demo'
+            },
+            {
+                url: 'https://github.com/EstDavid/delta-radar',
+                name: 'Frontend Code'
+            }
         ]
     },
     {
@@ -223,8 +263,14 @@ export const projects = [
             'Redux'
         ],
         demoCodeURLs: [
-            'http://dlp-token-exchange.herokuapp.com/',
-            'https://github.com/EstDavid/DappExchange'
+            {
+                url: 'http://dlp-token-exchange.herokuapp.com/',
+                name: 'Live Demo'
+            },
+            {
+                url: 'https://github.com/EstDavid/DappExchange',
+                name: 'Frontend Code'
+            }
         ]
     },
     {
@@ -247,9 +293,18 @@ export const projects = [
             'MongoDB'
         ],
         demoCodeURLs: [
-            'http://uniswapv3-charts.herokuapp.com/',
-            'https://github.com/EstDavid/uniswapv3-charts',
-            'https://github.com/EstDavid/UniswapV3OracleReader'
+            {
+                url: 'http://uniswapv3-charts.herokuapp.com/',
+                name: 'Live Demo'
+            },
+            {
+                url: 'https://github.com/EstDavid/uniswapv3-charts',
+                name: 'Frontend Code'
+            },
+            {
+                url: 'https://github.com/EstDavid/UniswapV3OracleReader',
+                name: 'Backend code'
+            }
         ]
     },
     {
@@ -266,20 +321,30 @@ export const projects = [
             'Bootstrap'
         ],
         demoCodeURLs: [
-            'https://estdavid.github.io/pixel-art-app/',
-            'https://github.com/EstDavid/pixel-art-app'
+            {
+                url: 'https://estdavid.github.io/pixel-art-app/',
+                name: 'Live Demo'
+            },
+            {
+                url: 'https://github.com/EstDavid/pixel-art-app',
+                name: 'Frontend Code'
+            }
         ]
     }
 ];
 
 export const about = {
     title1: 'Hey there!',
-    title2: "I'm a Developer with experience in Front End and Blockchain",
+    title2: "I'm a Fullstack JavaScript Developer",
     descriptions: [
-        <span>My name is David, and I began to learn coding in the beginning of 2021.</span>,
-        <span>My initial focus was on Blockchain and learning to code smart contracts on Solidity. </span>,
+        <span>My name is David, and I come from a background as Mechanical Engineer designing and calculating systems for trains and locomotives.</span>,
+        <div className='d-flex flex-row'>
+            <img src={driversDesk} alt='' className='w-50 p-1' />
+            <img src={finiteElements} alt='' className='w-50 p-1' />
+        </div>,
+        <span>I began to learn coding in the beginning of 2021. My initial focus was on Blockchain and learning to code smart contracts on Solidity. </span>,
         <span>
-            The need to showcase my projects brought me to learn Frontend Development and made me realize that I also really enjoy this area of software development.
+            The need to showcase my projects brought me to learn Frontend and Fullstack Development, and made me realize that I really enjoy this area of software development.
         </span>,
         <span>
             {'For finding out more, you can checkout here my '}
