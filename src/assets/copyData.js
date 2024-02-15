@@ -48,123 +48,140 @@ export const completeSkillSet = [
         iconText: 'react-original'
     },
     {
+        name: 'React Native',
+        isGeneral: true,
+        isFramework: true,
+        iconText: 'react-original'
+    },
+    {
         name: 'Redux',
         isGeneral: true,
         isFramework: true,
         iconText: 'redux-original'
     },
-    {
-        name: 'MongoDB',
+    },
+{
+    name: 'MongoDB',
         isGeneral: true,
-        isFramework: true,
-        iconText: 'mongodb-plain'
-    },
-    {
-        name: 'GraphQL',
+            isFramework: true,
+                iconText: 'mongodb-plain';
+},
+{
+    name: 'GraphQL',
         isGeneral: true,
-        isFramework: true,
-        iconText: 'graphql-plain'
-    },
-    {
-        name: 'Bootstrap',
+            isFramework: true,
+                iconText: 'graphql-plain';
+},
+{
+    name: 'GraphQL',
         isGeneral: true,
-        isFramework: true,
-        iconText: 'bootstrap-plain'
-    },
-    {
-        name: 'Truffle',
+            isFramework: true,
+                iconText: 'graphql-plain';
+},
+{
+    name: 'Bootstrap',
+        isGeneral: true,
+            isFramework: true,
+                iconText: 'bootstrap-plain';
+},
+{
+    name: 'Truffle',
         isBlockchain: true,
-        isFramework: false,
+            isFramework: false,
+                isFramework: false,
     },
-    {
-        name: 'Ganache',
+{
+    name: 'Ganache',
         isBlockchain: true,
-        isFramework: false,
+            isFramework: false,
+                isFramework: false,
     },
-    {
-        name: 'Flash Swaps',
-        isBlockchain: true,
-    },
-    {
-        name: 'Trading Bots',
-        isBlockchain: true
-    },
-    {
-        name: 'NFTs',
-        isBlockchain: true,
-    },
-    {
-        name: 'Uniswap V3',
+{
+    name: 'Flash Swaps',
         isBlockchain: true,
     },
-    {
-        name: 'Javascript',
-        isGeneral: true,
-        isLanguage: true,
-        iconText: 'javascript-plain'
-    },
-    {
-        name: 'Python',
-        isGeneral: true,
-        isLanguage: true,
-        iconText: 'python-plain'
-    },
-    {
-        name: 'Typescript',
-        isGeneral: true,
-        isLanguage: true,
-        iconText: 'typescript-plain'
-    },
-    {
-        name: 'Git',
-        isGeneral: true,
-        isFramework: true,
-        iconText: 'git-plain'
-    },
-    {
-        name: 'Github',
-        isGeneral: true,
-        isFramework: true,
-        iconText: 'github-original'
-    },
-    {
-        name: 'VS Code',
-        isGeneral: true,
-        isFramework: true,
-        iconText: 'vscode-plain'
-    },
-    {
-        name: 'Hardhat',
+{
+    name: 'Trading Bots',
+        isBlockchain: true;
+},
+{
+    name: 'NFTs',
         isBlockchain: true,
-        isFramework: false,
     },
-    {
-        name: 'Next.js',
-        isGeneral: true,
-        isFramework: true,
-        iconText: 'nextjs-plain'
-    }, {
-        name: 'Tailwind CSS',
-        isGeneral: true,
-        isFramework: true,
-        iconText: 'tailwindcss-plain'
-    }, {
-        name: 'Clerk',
-        isGeneral: true,
-        isFramework: false,
-        iconText: 'clerk-plain'
+{
+    name: 'Uniswap V3',
+        isBlockchain: true,
     },
-    {
-        name: 'Socket.io',
+{
+    name: 'Javascript',
         isGeneral: true,
-        isFramework: false,
-        iconText: 'socketio-plain'
+            isLanguage: true,
+                iconText: 'javascript-plain';
+},
+{
+    name: 'Python',
+        isGeneral: true,
+            isLanguage: true,
+                iconText: 'python-plain';
+},
+{
+    name: 'Typescript',
+        isGeneral: true,
+            isLanguage: true,
+                iconText: 'typescript-plain';
+},
+{
+    name: 'Git',
+        isGeneral: true,
+            isFramework: true,
+                iconText: 'git-plain';
+},
+{
+    name: 'Github',
+        isGeneral: true,
+            isFramework: true,
+                iconText: 'github-original';
+},
+{
+    name: 'VS Code',
+        isGeneral: true,
+            isFramework: true,
+                iconText: 'vscode-plain';
+},
+{
+    name: 'Hardhat',
+        isBlockchain: true,
+            isFramework: false,
     },
+{
+    name: 'Next.js',
+        isGeneral: true,
+            isFramework: true,
+                iconText: 'nextjs-plain';
+}, {
+    name: 'Tailwind CSS',
+        isGeneral: true,
+            isFramework: true,
+                iconText: 'tailwindcss-plain';
+}, {
+    name: 'Clerk',
+        isGeneral: true,
+            isFramework: false,
+                iconText: 'clerk-plain';
+},
+{
+    name: 'Socket.io',
+        isGeneral: true,
+            isFramework: false,
+                iconText: 'socketio-plain';
+},
 
 ];
 
 export const skillCategories = [
     {
+        name: 'Frameworks/Tools',
+        key: 'isFramework'
         name: 'Frameworks/Tools',
         key: 'isFramework'
     },
@@ -175,6 +192,8 @@ export const skillCategories = [
     {
         name: 'Blockchain',
         key: 'isBlockchain'
+        name: 'Blockchain',
+        key: 'isBlockchain'
     }
 ];
 
@@ -183,13 +202,16 @@ export const mainLinks = {
     github: 'https://github.com/EstDavid/',
     linkedIn: 'https://www.linkedin.com/in/david-de-esteban',
     curriculum: 'https://drive.google.com/file/d/1L-rVwHZh2PeKwp_lcviP5d5DTyovP7OM/view?usp=sharing',
+    curriculum: 'https://drive.google.com/file/d/1L-rVwHZh2PeKwp_lcviP5d5DTyovP7OM/view?usp=sharing',
     cv: cvDocument,
     blog: 'https://blog.davidesteban.dev'
 };
 
 export const home = {
     titleQuestion: 'Fullstack Developer',
+    titleQuestion: 'Fullstack Developer',
     title: "Hey, I'm David",
+    titleCaption: "I'm a developer with experience in Front End, Backend and Blockchain",
     titleCaption: "I'm a developer with experience in Front End, Backend and Blockchain",
     backgroundImage
 };
@@ -260,162 +282,209 @@ export const projects = [
             </ul>,
             <span>
                 The app displays the historic output from the trading bot scanner module and allows to search and filter past potential trades, according to criteria such as profitability, date, token or exchange
-            </span>
-        ],
-        skillSets: [
-            'Solidity',
-            'Deployment to Mainnet',
-            'ethers',
-            'Trading Bots',
-            'Flash Swaps',
-            'Truffle',
-            'Ganache',
-            'Javascript',
-            'Node.js',
-            'React',
-            'Redux',
-            'MongoDB',
-            'Bootstrap'
-        ],
-        demoCodeURLs: [
-            {
-                url: 'http://delta-radar.herokuapp.com/',
+                <span>
+                    The app displays the historic output from the trading bot scanner module and allows to search and filter past potential trades, according to criteria such as profitability, date, token or exchange
+                </span>
+                ],
+                skillSets: [
+                'Solidity',
+                'Deployment to Mainnet',
+                'ethers',
+                'Trading Bots',
+                'Flash Swaps',
+                'Truffle',
+                'Ganache',
+                'Javascript',
+                'Node.js',
+                'React',
+                'Redux',
+                'MongoDB',
+                'Bootstrap'
+                ],
+                demoCodeURLs: [
+                {
+                    url: 'http://delta-radar.herokuapp.com/',
                 name: 'Live Demo'
             },
-            {
-                url: 'https://github.com/EstDavid/delta-radar',
+                {
+                    url: 'https://github.com/EstDavid/delta-radar',
                 name: 'Frontend Code'
             }
-        ]
+                {
+                    url: 'http://delta-radar.herokuapp.com/',
+                name: 'Live Demo'
+            },
+                {
+                    url: 'https://github.com/EstDavid/delta-radar',
+                name: 'Frontend Code'
+            }
+                ]
     },
-    {
-        title: 'Dolphinance',
-        image: dolphinanceProject,
-        description: [
-            <h5>Exchange Dapp with its own ERC-20 token</h5>,
+                {
+                    title: 'Dolphinance',
+                image: dolphinanceProject,
+                description: [
+                <h5>Exchange Dapp with its own ERC-20 token</h5>,
+                <span>Both corresponding smart contracts are deployed on the Rinkeby network <a
             <span>Both corresponding smart contracts are deployed on the Rinkeby network <a
-                href="https://rinkeby.etherscan.io/address/0x6723e472b9de9b329f344aa6c8dc80e67db92de8" target="_blank" rel="noreferrer noopener" >here - Dapp -
+                        href="https://rinkeby.etherscan.io/address/0x6723e472b9de9b329f344aa6c8dc80e67db92de8" target="_blank" rel="noreferrer noopener" >here - Dapp -
+                    </a> and <a
             </a> and <a
-                href="https://rinkeby.etherscan.io/address/0x664c8fcf50a588d3208c729362685ea911522198" target="_blank" rel="noreferrer noopener" >here - ERC-20 token -</a></span>,
-            <span>Dolphinance is an exchange Dapp based on the capstone project from the <a
-                href="https://www.dappuniversity.com/" target="_blank" rel="noreferrer noopener" >
-                Dapp University</a> Blockchain Developer Bootcamp</span>,
-            <span>The dapp allows <strong>buying and selling</strong> the native token of the exchange, <strong>deposits and withdrawals</strong>, <strong>placing limit orders</strong> and tracking token price</span>,
-        ],
-        skillSets: [
-            'Solidity',
-            'ethers',
-            'Truffle',
-            'Ganache',
-            'Javascript',
-            'Node.js',
-            'React',
-            'Redux'
-        ],
-        demoCodeURLs: [
-            {
-                url: 'http://dlp-token-exchange.herokuapp.com/',
+                        href="https://rinkeby.etherscan.io/address/0x664c8fcf50a588d3208c729362685ea911522198" target="_blank" rel="noreferrer noopener" >here - ERC-20 token -</a></span>,
+                <span>Dolphinance is an exchange Dapp based on the capstone project from the <a
+                    href="https://www.dappuniversity.com/" target="_blank" rel="noreferrer noopener" >
+                    Dapp University</a> Blockchain Developer Bootcamp</span>,
+                <span>Dolphinance is an exchange Dapp based on the capstone project from the <a
+                    href="https://www.dappuniversity.com/" target="_blank" rel="noreferrer noopener" >
+                    Dapp University</a> Blockchain Developer Bootcamp</span>,
+                <span>The dapp allows <strong>buying and selling</strong> the native token of the exchange, <strong>deposits and withdrawals</strong>, <strong>placing limit orders</strong> and tracking token price</span>,
+                ],
+                skillSets: [
+                'Solidity',
+                'ethers',
+                'Truffle',
+                'Ganache',
+                'Javascript',
+                'Node.js',
+                'React',
+                'Redux'
+                ],
+                demoCodeURLs: [
+                {
+                    url: 'http://dlp-token-exchange.herokuapp.com/',
                 name: 'Live Demo'
             },
-            {
-                url: 'https://github.com/EstDavid/DappExchange',
+                {
+                    url: 'https://github.com/EstDavid/DappExchange',
                 name: 'Frontend Code'
             }
-        ]
-    },
-    {
-        title: 'UniCharts',
-        image: uniChartsProject,
-        description: [
-            <h5>Charting app that reads price data from Uniswap V3 pools</h5>,
-            'The app is composed of a frontend and a backend. The backend retrieves data from Uniswap V3 pools and stores it on a database',
-            'The frontend reads the historical price data from the database and generates the charts',
-            'It features easy search of coin pairs, visualization of charts in different timeframes and use of exponential and simple moving averages (EMA and SMA)'
-        ],
-        skillSets: [
-            'Uniswap V3',
-            'Typescript',
-            'ethers',
-            'Javascript',
-            'Node.js',
-            'React',
-            'Redux',
-            'MongoDB'
-        ],
-        demoCodeURLs: [
-            {
-                url: 'http://uniswapv3-charts.herokuapp.com/',
+                {
+                    url: 'http://dlp-token-exchange.herokuapp.com/',
                 name: 'Live Demo'
             },
-            {
-                url: 'https://github.com/EstDavid/uniswapv3-charts',
+                {
+                    url: 'https://github.com/EstDavid/DappExchange',
+                name: 'Frontend Code'
+            }
+                ]
+    },
+                {
+                    title: 'UniCharts',
+                image: uniChartsProject,
+                description: [
+                <h5>Charting app that reads price data from Uniswap V3 pools</h5>,
+                'The app is composed of a frontend and a backend. The backend retrieves data from Uniswap V3 pools and stores it on a database',
+                'The frontend reads the historical price data from the database and generates the charts',
+                'It features easy search of coin pairs, visualization of charts in different timeframes and use of exponential and simple moving averages (EMA and SMA)'
+                ],
+                skillSets: [
+                'Uniswap V3',
+                'Typescript',
+                'ethers',
+                'Javascript',
+                'Node.js',
+                'React',
+                'Redux',
+                'MongoDB'
+                ],
+                demoCodeURLs: [
+                {
+                    url: 'http://uniswapv3-charts.herokuapp.com/',
+                name: 'Live Demo'
+            },
+                {
+                    url: 'https://github.com/EstDavid/uniswapv3-charts',
                 name: 'Frontend Code'
             },
-            {
-                url: 'https://github.com/EstDavid/UniswapV3OracleReader',
+                {
+                    url: 'https://github.com/EstDavid/UniswapV3OracleReader',
                 name: 'Backend code'
             }
-        ]
-    },
-    {
-        title: 'Pixel Artifier',
-        image: pixelArtProject,
-        description: [
-            <h5>Pixel Art App</h5>,
-            <span>The 'Pixel Artifier' app is a Single Page Application app which allows the user to paint on a 'pixel-like' square canvas, which can have the sizes of (8 x 8), (12 x 12), (16 x 16), or (32 x 32) pixels.</span>
-        ],
-        skillSets: [
-            'Javascript',
-            'Node.js',
-            'React',
-            'Bootstrap'
-        ],
-        demoCodeURLs: [
-            {
-                url: 'https://estdavid.github.io/pixel-art-app/',
+                {
+                    url: 'http://uniswapv3-charts.herokuapp.com/',
                 name: 'Live Demo'
             },
-            {
-                url: 'https://github.com/EstDavid/pixel-art-app',
+                {
+                    url: 'https://github.com/EstDavid/uniswapv3-charts',
+                name: 'Frontend Code'
+            },
+                {
+                    url: 'https://github.com/EstDavid/UniswapV3OracleReader',
+                name: 'Backend code'
+            }
+                ]
+    },
+                {
+                    title: 'Pixel Artifier',
+                image: pixelArtProject,
+                description: [
+                <h5>Pixel Art App</h5>,
+                <span>The 'Pixel Artifier' app is a Single Page Application app which allows the user to paint on a 'pixel-like' square canvas, which can have the sizes of (8 x 8), (12 x 12), (16 x 16), or (32 x 32) pixels.</span>
+                ],
+                skillSets: [
+                'Javascript',
+                'Node.js',
+                'React',
+                'Bootstrap'
+                ],
+                demoCodeURLs: [
+                {
+                    url: 'https://estdavid.github.io/pixel-art-app/',
+                name: 'Live Demo'
+            },
+                {
+                    url: 'https://github.com/EstDavid/pixel-art-app',
                 name: 'Frontend Code'
             }
-        ]
+                {
+                    url: 'https://estdavid.github.io/pixel-art-app/',
+                name: 'Live Demo'
+            },
+                {
+                    url: 'https://github.com/EstDavid/pixel-art-app',
+                name: 'Frontend Code'
+            }
+                ]
     }
-];
+                ];
 
-export const about = {
-    title1: 'Hey there!',
-    title2: "I'm David, Software Engineer",
-    descriptions: [
-        <span>I come from a background as Mechanical Engineer designing and calculating systems for trains and locomotives.</span>,
-        <div className='d-flex flex-row'>
-            <img src={driversDesk} alt='' className='w-50 p-1' />
-            <img src={finiteElements} alt='' className='w-50 p-1' />
-        </div>,
-        <span>Since 2021 I am a Full-Stack Software Developer, with ample experience in development of projects using JavaScript and TypeScript, leveraging on technologies such as Node, Express, Koa, Mongo, React, React Native, Redux and NextJS.</span>,
-        <span>
-            With over 15 years of experience as Mechanical Engineer in the railway industry, I possess a strong ability for learning new technologies. I am quite familiar with working in complex projects with a variety of stakeholders, where it is crucial to reach compromises between continuous improvement, technical quality, deadlines and costs. I love working in multidisciplinary and multicultural teams. During my career, I have worked and studied in different countries. Here is my set of language skills: Native Spanish and bilingual English, and fair knowledge of French, Dutch and German.
-        </span>,
-        <span>
-            {'For finding out more, you can checkout here my '}
-            <a href={mainLinks.curriculum} target="_blank" rel="noreferrer noopener" >Curriculum Vitae - CV -</a>
-            {', or visit my profiles on '}
-            <a href={mainLinks.github} target="_blank" rel="noreferrer noopener" >Github</a>
-            {' and '}
-            <a href={mainLinks.linkedIn} target="_blank" rel="noreferrer noopener" >LinkedIn</a>
-        </span>
-    ]
+                export const about = {
+                    title1: 'Hey there!',
+                title2: "I'm David, Software Engineer",
+                descriptions: [
+                <span>I come from a background as Mechanical Engineer designing and calculating systems for trains and locomotives.</span>,
+                <div className='d-flex flex-row'>
+                    <img src={driversDesk} alt='' className='w-50 p-1' />
+                    <img src={finiteElements} alt='' className='w-50 p-1' />
+                </div>,
+                <span>Since 2021 I am a Full-Stack Software Developer, with ample experience in development of projects using JavaScript and TypeScript, leveraging on technologies such as Node, Express, Koa, Mongo, React, React Native, Redux and NextJS.</span>,
+                <span>
+                    With over 15 years of experience as Mechanical Engineer in the railway industry, I possess a strong ability for learning new technologies. I am quite familiar with working in complex projects with a variety of stakeholders, where it is crucial to reach compromises between continuous improvement, technical quality, deadlines and costs. I love working in multidisciplinary and multicultural teams. During my career, I have worked and studied in different countries. Here is my set of language skills: Native Spanish and bilingual English, and fair knowledge of French, Dutch and German.
+                </span>,
+                <span>
+                    {'For finding out more, you can checkout here my '}
+                    <a href={mainLinks.curriculum} target="_blank" rel="noreferrer noopener" >Curriculum Vitae - CV -</a>
+                    {', or visit my profiles on '}
+                    <a href={mainLinks.github} target="_blank" rel="noreferrer noopener" >Github</a>
+                    {' and '}
+                    {' and '}
+                    <a href={mainLinks.linkedIn} target="_blank" rel="noreferrer noopener" >LinkedIn</a>
+                </span>
+            </span>
+        ]
 
-};
+    };
 
 export const getSkill = (skillName) => {
     for (let skill of completeSkillSet) {
         if (skill.name === skillName) {
-            return skill;
-        }
-    }
-};
+            for (let skill of completeSkillSet) {
+                if (skill.name === skillName) {
+                    return skill;
+                }
+            }
+        };
 
-export const getIconSymbol = (textId) => {
-    return <i className={`devicon-${textId} colored me-1`}></i>;
-};
+        export const getIconSymbol = (textId) => {
+            return <i className={`devicon-${textId} colored me-1`}></i>;
+        };

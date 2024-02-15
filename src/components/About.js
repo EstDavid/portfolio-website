@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import { about, skillCategories, completeSkillSet, getIconSymbol } from '../assets/copyData';
+import React, { useState } from 'react';
+import { about, skillCategories, completeSkillSet, getIconSymbol } from '../assets/copyData';
 
 const About = () => {
 
@@ -11,6 +13,7 @@ const About = () => {
         const skillSetKey = skillCategories[skillSetSelection].key;
         return skill[skillSetKey];
     });
+
 
     const handleSelectionChange = (index) => {
         setSelection(index);
