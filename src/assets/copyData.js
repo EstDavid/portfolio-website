@@ -6,9 +6,10 @@ import dolphinanceProject from './projectDolphinance.png';
 import uniChartsProject from './projectUniCharts.png';
 import pixelArtProject from './projectPixelArt.png';
 import puraVidaProject from './projectPuraVida.jpg';
+import cadoProject from './projectCado.png';
 import finiteElements from './finiteElements.png';
 import driversDesk from './driversDesk.png';
-import cvDocument from './CV Developer - David de Esteban.pdf';
+import cvDocument from './CV Software Eng - David de Esteban.pdf';
 import backgroundImage from './background.png';
 
 export const completeSkillSet = [
@@ -136,7 +137,29 @@ export const completeSkillSet = [
         name: 'Hardhat',
         isBlockchain: true,
         isFramework: false,
-    }
+    },
+    {
+        name: 'Next.js',
+        isGeneral: true,
+        isFramework: true,
+        iconText: 'nextjs-plain'
+    }, {
+        name: 'Tailwind CSS',
+        isGeneral: true,
+        isFramework: true,
+        iconText: 'tailwindcss-plain'
+    }, {
+        name: 'Clerk',
+        isGeneral: true,
+        isFramework: false,
+        iconText: 'clerk-plain'
+    },
+    {
+        name: 'Socket.io',
+        isGeneral: true,
+        isFramework: false,
+        iconText: 'socketio-plain'
+    },
 
 ];
 
@@ -162,7 +185,7 @@ export const mainLinks = {
     curriculum: 'https://drive.google.com/file/d/1L-rVwHZh2PeKwp_lcviP5d5DTyovP7OM/view?usp=sharing',
     cv: cvDocument,
     blog: 'https://blog.davidesteban.dev'
-}
+};
 
 export const home = {
     titleQuestion: 'Fullstack Developer',
@@ -173,7 +196,7 @@ export const home = {
 
 export const projects = [
     {
-        title: 'Festival App (Work in Progress)',
+        title: 'Summer Festival App (Work in Progress)',
         image: puraVidaProject,
         description: [
             <h5>App for planning your activities in a Spiritual Festival</h5>,
@@ -185,13 +208,40 @@ export const projects = [
             'React Native',
             'Javascript',
             'Node.js',
-            'Redux',
-            'GraphQL',
+            'Redux'
         ],
         demoCodeURLs: [
             {
                 url: 'https://github.com/EstDavid/pura-vida-app',
                 name: 'Code'
+            }
+        ]
+    },
+    {
+        title: 'CADO - Connecting pet owners with loving pet sitters',
+        image: cadoProject,
+        description: [
+            <h5>CADO is a Mobile web application helping pet owners to find pet sitters, and pet sitters to manage pet stays and send media updates</h5>,
+            <span>- Collaborated in the creation of the database model and implemented several client and server components</span>,
+            <span>- Centralized styling and colors of the app using Tailwind CSS</span>,
+            <span>- Gave technical assistance to other developers in solving roadblocks</span>,
+        ],
+        skillSets: [
+            'React',
+            'Next.js',
+            'MongoDB',
+            'Tailwind CSS',
+            'Clerk',
+            'Socket.io'
+        ],
+        demoCodeURLs: [
+            {
+                url: 'https://github.com/EstDavid/pet-care-app',
+                name: 'Code'
+            },
+            {
+                url: 'https://youtu.be/RXkWKWYjr74',
+                name: 'Demo Video'
             }
         ]
     },
@@ -335,16 +385,16 @@ export const projects = [
 
 export const about = {
     title1: 'Hey there!',
-    title2: "I'm a Fullstack JavaScript Developer",
+    title2: "I'm David, Software Engineer",
     descriptions: [
-        <span>My name is David, and I come from a background as Mechanical Engineer designing and calculating systems for trains and locomotives.</span>,
+        <span>I come from a background as Mechanical Engineer designing and calculating systems for trains and locomotives.</span>,
         <div className='d-flex flex-row'>
             <img src={driversDesk} alt='' className='w-50 p-1' />
             <img src={finiteElements} alt='' className='w-50 p-1' />
         </div>,
-        <span>I began to learn coding in the beginning of 2021. My initial focus was on Blockchain and learning to code smart contracts on Solidity. </span>,
+        <span>Since 2021 I am a Full-Stack Software Developer, with ample experience in development of projects using JavaScript and TypeScript, leveraging on technologies such as Node, Express, Koa, Mongo, React, React Native, Redux and NextJS.</span>,
         <span>
-            The need to showcase my projects brought me to learn Frontend and Fullstack Development, and made me realize that I really enjoy this area of software development.
+            With over 15 years of experience as Mechanical Engineer in the railway industry, I possess a strong ability for learning new technologies. I am quite familiar with working in complex projects with a variety of stakeholders, where it is crucial to reach compromises between continuous improvement, technical quality, deadlines and costs. I love working in multidisciplinary and multicultural teams. During my career, I have worked and studied in different countries. Here is my set of language skills: Native Spanish and bilingual English, and fair knowledge of French, Dutch and German.
         </span>,
         <span>
             {'For finding out more, you can checkout here my '}
@@ -356,7 +406,7 @@ export const about = {
         </span>
     ]
 
-}
+};
 
 export const getSkill = (skillName) => {
     for (let skill of completeSkillSet) {
@@ -367,5 +417,5 @@ export const getSkill = (skillName) => {
 };
 
 export const getIconSymbol = (textId) => {
-    return <i className={`devicon-${textId} colored me-1`}></i>
-}
+    return <i className={`devicon-${textId} colored me-1`}></i>;
+};
