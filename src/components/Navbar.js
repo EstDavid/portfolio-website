@@ -10,8 +10,7 @@ const Navbar = () => {
             <div className="container">
                 <a className="navbar-brand d-flex align-items-center" href="#top">
                     <span className="badge bg-primary me-2 fs-1">D</span>
-                    <h1 className="fs-3"><p className="m-1"><strong>JavaScript Fullstack</strong></p>
-                        <p className="m-1"><strong>Developer</strong></p></h1>
+                    <h1 className="fs-3"><p className="m-1"><strong>Software Engineer</strong></p></h1>
                 </a>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
@@ -24,7 +23,7 @@ const Navbar = () => {
                                 <li key={index} className={index === 0 ? "nav-item active" : "nav-item"}>
                                     <a className="nav-link" href={'#' + navLink}>{navLink[0].toUpperCase() + navLink.slice(1)}</a>
                                 </li>
-                            )
+                            );
                         })}
                     </ul>
 
@@ -45,7 +44,7 @@ const Navbar = () => {
                 </div>
             </div>
         </nav>
-    )
-}
+    );
+};
 
 export default Navbar;
