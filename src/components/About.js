@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { about, skillCategories, completeSkillSet, getIconSymbol } from '../assets/copyData';
-import React, { useState } from 'react';
-import { about, skillCategories, completeSkillSet, getIconSymbol } from '../assets/copyData';
 
 const About = () => {
 
