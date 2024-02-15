@@ -14,12 +14,12 @@ const About = () => {
 
     const handleSelectionChange = (index) => {
         setSelection(index);
-    }
+    };
 
     return (
         <section className="section bg-light" id="about">
-            <div className="container">
-                <div className="row justify-content-center">
+            <div className="mw-100 px-3">
+                <div className="mw-100 row justify-content-center">
                     <div className="col-12 text-center">
                         <div className="section-title">
                             <div className="position-relative">
@@ -28,14 +28,14 @@ const About = () => {
                         </div>
                     </div>
                 </div>
-                <div className="row ">
-                    <div className="col-md-5 col-sm-12 col-xs-12">
+                <div className="mw-100 row">
+                    <div className="col-md-5 col-sm-12 col-xs-12 col-12">
                         <h2>{about.title1}</h2>
                         <h4>{about.title2}</h4>
                         {about.descriptions.map((description, index) => {
                             return (
                                 <p key={index}>{description}</p>
-                            )
+                            );
                         })}
                     </div>
 
@@ -59,7 +59,7 @@ const About = () => {
                                             htmlFor={`btnradio${index}`}
                                         >{category.name}</label>
                                     </div>
-                                )
+                                );
                             })}
                         </div>
                         <div className="d-flex flex-wrap">
@@ -69,7 +69,7 @@ const About = () => {
                                         {skill.iconText ? getIconSymbol(skill.iconText) : ''}
                                         {skill.name}
                                     </button>
-                                )
+                                );
                             })}
                         </div>
 
@@ -77,7 +77,7 @@ const About = () => {
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
 export default About;

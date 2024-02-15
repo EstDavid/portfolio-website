@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { getSkill, getIconSymbol } from '../assets/copyData';
 
 const LinkButton = ({ url, text, focused }) => {
@@ -10,24 +10,18 @@ const LinkButton = ({ url, text, focused }) => {
             href={url}>
             {text}
         </a>
-    )
-}
+    );
+};
 
 const ProjectFigure = (props) => {
     const { project, descriptionId, imageSecond } = props;
 
-    const [showText, setShowText] = useState(false)
-
-    const handleShowText = (event) => {
-        event.preventDefault()
-        console.log(showText)
-        setShowText(!showText)
-    }
+    const showText = true;
 
     return (
         <figure className="h-100 d-flex flex-wrap justify-content-center m-0 py-5">
             <div className={`img-wrapper col-11 col-lg-5 p-0 mb-3 mb-lg-0 ${imageSecond ? 'order-lg-1' : 'order-lg-0'}`}>
-                <img src={project.image} className="img-responsive" alt={project.title} ></img>
+                <img src={project.image} className="img-responsive mx-auto" alt={project.title} ></img>
                 <div className="overlay">
                     <div className="project-buttons" role="group">
                         {project.demoCodeURLs.map((urlObject, index) => {
@@ -38,7 +32,7 @@ const ProjectFigure = (props) => {
                                     text={urlObject.name}
                                     focused={index === 0 ? true : false}
                                 />
-                            )
+                            );
                         })}
                     </div>
                 </div>
@@ -60,7 +54,7 @@ const ProjectFigure = (props) => {
                                         text={urlObject.name}
                                         focused={index === 0 ? true : false}
                                     />
-                                )
+                                );
                             })}
                         </div>
                     </div>
@@ -70,11 +64,8 @@ const ProjectFigure = (props) => {
                                 <div className="fs-6" key={index} >
                                     {paragraph}
                                 </div>
-                            )
+                            );
                         })}
-                        <p className="read-more">
-                            <button className="btn btn-outline-primary m-2" onClick={handleShowText}>{showText ? 'Show less' : 'Show more'}</button>
-                        </p>
                     </div>
                     <div>
                         <h5 className="mt-2">Tools and technologies used:</h5>
@@ -87,13 +78,13 @@ const ProjectFigure = (props) => {
                                             {skill.iconText ? getIconSymbol(skill.iconText) : ''}
                                             {skill.name}
                                         </button>
-                                    )
+                                    );
                                 } else {
                                     return (
                                         <button key={index} type="button" className="btn btn-outline-secondary m-1" disabled>
                                             {skillName}
                                         </button>
-                                    )
+                                    );
                                 }
                             })}
                         </div>
@@ -101,7 +92,7 @@ const ProjectFigure = (props) => {
                 </div>
             </figcaption>
         </figure>
-    )
-}
+    );
+};
 
 export default ProjectFigure;
