@@ -87,12 +87,10 @@ export const completeSkillSet = [
         name: 'Truffle',
         isBlockchain: true,
         isFramework: false,
-        isFramework: false,
     },
     {
         name: 'Ganache',
         isBlockchain: true,
-        isFramework: false,
         isFramework: false,
     },
     {
@@ -196,18 +194,15 @@ export const mainLinks = {
     email: 'mailto:estdav@protonmail.com',
     github: 'https://github.com/EstDavid/',
     linkedIn: 'https://www.linkedin.com/in/david-de-esteban',
-    curriculum: 'https://drive.google.com/file/d/1L-rVwHZh2PeKwp_lcviP5d5DTyovP7OM/view?usp=sharing',
-    curriculum: 'https://drive.google.com/file/d/1L-rVwHZh2PeKwp_lcviP5d5DTyovP7OM/view?usp=sharing',
+    curriculum: 'https://drive.google.com/file/d/1XtedkbJQXXokyZCrb7DxDU3BFlluyrxo/view?usp=drive_link',
     cv: cvDocument,
     blog: 'https://blog.davidesteban.dev'
 };
 
 export const home = {
     titleQuestion: 'Fullstack Developer',
-    titleQuestion: 'Fullstack Developer',
     title: "Hey, I'm David",
-    titleCaption: "I'm a developer with experience in Front End, Backend and Blockchain",
-    titleCaption: "I'm a developer with experience in Front End, Backend and Blockchain",
+    titleCaption: "I am a developer with experience in Front End, Back End, mainly in JavaScript, TypeScript and Node",
     backgroundImage
 };
 
