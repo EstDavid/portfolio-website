@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { about, skillCategories, completeSkillSet, getIconSymbol } from '../assets/copyData';
 
-const About = () => {
+const About = ({ theme }) => {
 
     const initialSelection = 0;
 
@@ -18,7 +18,7 @@ const About = () => {
     };
 
     return (
-        <section className="section bg-light" id="about">
+        <section className={`section container ${theme === 'light' ? 'text-secondary' : 'text-light'}`} id="about">
             <div className="mw-100 px-3">
                 <div className="mw-100 row justify-content-center">
                     <div className="col-12 text-center">
@@ -35,7 +35,7 @@ const About = () => {
                         <h4>{about.title2}</h4>
                         {about.descriptions.map((description, index) => {
                             return (
-                                <p key={index}>{description}</p>
+                                <div key={index}>{description}</div>
                             );
                         })}
                     </div>
@@ -66,7 +66,7 @@ const About = () => {
                         <div className="d-flex flex-wrap">
                             {currentSkillSet.map((skill, index) => {
                                 return (
-                                    <button key={index} type="button" className="btn btn-outline-success m-1" disabled>
+                                    <button key={index} type="button" className={`btn m-1 ${theme === 'light' ? 'btn-outline-primary' : 'btn-outline-light'}`} disabled>
                                         {skill.iconText ? getIconSymbol(skill.iconText) : ''}
                                         {skill.name}
                                     </button>

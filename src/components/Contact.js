@@ -20,7 +20,7 @@ const ContactItem = (props) => {
                     {showInfo ?
                         <a href={data[0]} className="text-primary">{data[1]}</a>
                         :
-                        <button className="btn btn-secondary" onClick={() => handleClick()}>Show {props.title}</button>
+                        <button className="btn btn-primary" onClick={() => handleClick()}>Show {props.title}</button>
                     }
                 </div>
             </div>
@@ -29,9 +29,9 @@ const ContactItem = (props) => {
 
 };
 
-const Contact = () => {
+const Contact = ({ theme }) => {
     return (
-        <section className="section bg-light" id="contact">
+        <section className={`section ${theme === 'light' ? 'text-secondary' : 'text-light'}`} id="contact">
             <div className="row justify-content-center">
                 <div className="col-12 text-center">
                     <div className="section-title">

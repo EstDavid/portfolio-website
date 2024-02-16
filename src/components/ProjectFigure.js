@@ -1,11 +1,11 @@
 import React from 'react';
 import { getSkill, getIconSymbol } from '../assets/copyData';
 
-const LinkButton = ({ url, text, focused }) => {
+const LinkButton = ({ url, text, focused, textColor, theme }) => {
     return (
         <a
             type="button"
-            className={`d-flex btn justify-content-center ${focused ? 'btn-primary' : 'btn-outline-primary'}`}
+            className={`d-flex btn justify-content-center ${textColor} ${focused ? 'btn-primary' : 'btn-outline-primary'} ${!focused && theme === 'light' ? '' : 'text-light'}`}
             target="_blank" rel="noreferrer noopener"
             href={url}>
             {text}
@@ -14,7 +14,7 @@ const LinkButton = ({ url, text, focused }) => {
 };
 
 const ProjectFigure = (props) => {
-    const { project, descriptionId, imageSecond } = props;
+    const { project, descriptionId, imageSecond, theme } = props;
 
     const showText = true;
 
@@ -31,6 +31,7 @@ const ProjectFigure = (props) => {
                                     url={urlObject.url}
                                     text={urlObject.name}
                                     focused={index === 0 ? true : false}
+                                    textColor={'text-light'}
                                 />
                             );
                         })}
@@ -53,6 +54,7 @@ const ProjectFigure = (props) => {
                                         url={urlObject.url}
                                         text={urlObject.name}
                                         focused={index === 0 ? true : false}
+                                        theme={theme}
                                     />
                                 );
                             })}
@@ -61,27 +63,27 @@ const ProjectFigure = (props) => {
                     <div className={`read-more-paragraph collapse ${showText ? "show" : ""}`} id={descriptionId}>
                         {project.description.map((paragraph, index) => {
                             return (
-                                <div className="fs-6" key={index} >
+                                <div className={`fs-6 ${theme === 'light' ? 'text-secondary' : 'text-light'}`} key={index} >
                                     {paragraph}
                                 </div>
                             );
                         })}
                     </div>
                     <div>
-                        <h5 className="mt-2">Tools and technologies used:</h5>
+                        <h5 className={`mt-2 ${theme === 'light' ? 'text-secondary' : 'text-light'}`}>Tools and technologies used:</h5>
                         <div className="d-flex flex-wrap w-100">
                             {project.skillSets.map((skillName, index) => {
                                 const skill = getSkill(skillName);
                                 if (skill !== undefined) {
                                     return (
-                                        <button key={index} type="button" className="btn btn-outline-secondary m-1" disabled>
+                                        <button key={index} type="button" className={`btn m-1 ${theme === 'light' ? 'btn-outline-primary' : 'btn-outline-light'}`} disabled>
                                             {skill.iconText ? getIconSymbol(skill.iconText) : ''}
                                             {skill.name}
                                         </button>
                                     );
                                 } else {
                                     return (
-                                        <button key={index} type="button" className="btn btn-outline-secondary m-1" disabled>
+                                        <button key={index} type="button" className={`btn m-1 ${theme === 'light' ? 'btn-outline-primary' : 'btn-outline-light'}`} disabled>
                                             {skillName}
                                         </button>
                                     );

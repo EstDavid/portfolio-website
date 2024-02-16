@@ -62,7 +62,7 @@ code {
 
 /*-- Navbar --*/
 .navbar-custom {
-  background-color: #fff !important;
+  // background-color: #fff !important;
   padding: 10px 0px !important;
   padding: 20px 0;
 	width: 100%;
@@ -95,7 +95,7 @@ code {
 
 /*-- Portfolio --*/
 .bg-light {
-	background: #f6f7fa;
+	// background: #f6f7fa;
 }
 
 .section {
@@ -105,7 +105,7 @@ code {
 }
 
 figure {
-  background: #fff;
+  // background: #fff;
   margin-bottom: 45px;
 }
 figure .img-wrapper {
@@ -135,7 +135,7 @@ figure .overlay {
 
 figure .overlay a {
   display: inline-block;
-  color: #fff;
+  // color: #fff;
   padding: 10px 23px;
   line-height: 1;
   border: 1px solid #fff;
@@ -228,6 +228,8 @@ figure figcaption p {
   font-size: 3rem;
   color: $secondary !important;
   background-color: inherit;
+  display: flex;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
