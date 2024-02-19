@@ -9,7 +9,7 @@ import puraVidaProject from './projectPuraVida.jpg';
 import cadoProject from './projectCado.png';
 import finiteElements from './finiteElements.png';
 import driversDesk from './driversDesk.png';
-import cvDocument from './CV Software Eng - David de Esteban.pdf';
+import cvDocument from './CV Fullstack - David de Esteban.pdf';
 import backgroundImage from './background.png';
 
 export const completeSkillSet = [
@@ -194,7 +194,7 @@ export const mainLinks = {
     email: 'mailto:estdav@protonmail.com',
     github: 'https://github.com/EstDavid/',
     linkedIn: 'https://www.linkedin.com/in/david-de-esteban',
-    curriculum: 'https://drive.google.com/file/d/1XtedkbJQXXokyZCrb7DxDU3BFlluyrxo/view?usp=drive_link',
+    curriculum: 'https://drive.google.com/file/d/1XxLb6yVHJAcNzwIMICxucrX4E6ZgoQQP/view?usp=sharing',
     cv: cvDocument,
     blog: 'https://blog.davidesteban.dev'
 };
